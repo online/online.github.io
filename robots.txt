@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /code/*
+Disallow: /page/*/
+Disallow: /archives/*
+Disallow: /2017/08/10/test/
+Host: https://inotes.pp.ua
+Sitemap: https://inotes.pp.ua/sitemap.xml
+Sitemap: https://inotes.pp.ua/post-sitemap.xml
+Sitemap: https://inotes.pp.ua/page-sitemap.xml
+Sitemap: https://inotes.pp.ua/tag-sitemap.xml
