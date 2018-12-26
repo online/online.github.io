@@ -755,7 +755,8 @@
           <div class="post-toc">
 
             
-              
+            
+            
             
 
             
@@ -820,6 +821,12 @@
 
     
 
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
     
 
     
@@ -1334,6 +1341,18 @@
 
   <script>
     
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Facebook,Twitter,Evernote,Reddit,Vkontakte";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
     
   </script>
 
