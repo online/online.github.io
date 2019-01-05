@@ -1930,7 +1930,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #aa46fb;
+  background: #e75204;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2954,5 +2954,15 @@ hr {
   .footer-inner {
     width: auto;
     text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .posts-expand .post-body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .posts-expand .post-title {
+    font-size: 25px;
   }
 }
