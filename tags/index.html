@@ -100,19 +100,19 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
 
-<link rel="stylesheet" href="/css/main.css?v=6.7.0">
+<link rel="stylesheet" href="/css/main.css?v=7.0.0">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.7.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.0">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.7.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.0">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.7.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.0">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=6.7.0" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.0" color="#222">
 
 
 
@@ -125,7 +125,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '6.7.0',
+    version: '7.0.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     fastclick: true,
@@ -162,8 +162,6 @@
 <meta name="twitter:description" content="Делюсь решениями к ситуациям и проблемам, с которыми столкнулся.">
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="iNotes" type="application/atom+xml">
 
@@ -186,7 +184,7 @@
 
 
 
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90344659-1"></script>
+  <script async src="//www.googletagmanager.com/gtag/js?id=UA-90344659-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
@@ -633,7 +631,7 @@
     
       <span class="post-meta-item-text">Общее время чтения &asymp;</span>
     
-    <span title="Общее время чтения">26 мин.</span>
+    <span title="Общее время чтения">27 мин.</span>
   
 </div>
 
@@ -652,6 +650,7 @@
 
 
         
+
 
 
 
@@ -753,41 +752,37 @@
   
 
 
-  <script src="/js/src/utils.js?v=6.7.0"></script>
+  <script src="/js/src/utils.js?v=7.0.0"></script>
 
-  <script src="/js/src/motion.js?v=6.7.0"></script>
+  <script src="/js/src/motion.js?v=7.0.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/js/src/schemes/muse.js?v=7.0.0"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
+<script src="/js/src/post-details.js?v=7.0.0"></script>
+
+
+
+  
+
+
+  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
 
 
 
   
   
-
-  
-  <script src="/js/src/scrollspy.js?v=6.7.0"></script>
-<script src="/js/src/post-details.js?v=6.7.0"></script>
-
-
-
-  
-
-
-  <script src="/js/src/bootstrap.js?v=6.7.0"></script>
-
-
-
-  
-
-  
-    <script id="dsq-count-scr" src="https://inotes-blog.disqus.com/count.js" async></script>
-  
-
-  
-
-
-
-
-
-
+  <script id="dsq-count-scr" src="https://inotes-blog.disqus.com/count.js" async></script>
 
 
 
@@ -1140,7 +1135,7 @@
   
 
   
-  <script src="/js/src/exturl.js?v=6.7.0"></script>
+  <script src="/js/src/exturl.js?v=7.0.0"></script>
 
 
   
@@ -1184,11 +1179,11 @@
     }
   </style>
   <script>
-    $('.highlight').each(function (i, e) {
+    $('.highlight').each(function(i, e) {
       var $wrap = $('<div>').addClass('highlight-wrap');
       $(e).after($wrap);
-      $wrap.append($('<button>').addClass('copy-btn').append('Скопировать').on('click', function (e) {
-        var code = $(this).parent().find('.code').find('.line').map(function (i, e) {
+      $wrap.append($('<button>').addClass('copy-btn').append('Скопировать').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
           return $(e).text();
         }).toArray().join('\n');
         var ta = document.createElement('textarea');
@@ -1214,9 +1209,9 @@
         
         ta.blur(); //For iOS
         $(this).blur();
-      })).on('mouseleave', function (e) {
+      })).on('mouseleave', function(e) {
         var $b = $(this).find('.copy-btn');
-        setTimeout(function () {
+        setTimeout(function() {
           $b.text('Скопировать');
         }, 300);
       }).append(e);
