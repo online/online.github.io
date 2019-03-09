@@ -8,8 +8,40 @@
     </url>
 
     <url>
-        <loc>https://inotes.pp.ua/2019/01/05/git-cheat-sheet/</loc>
-        <lastmod>2019-01-13T22:39:28.168Z</lastmod>
+        <loc>https://inotes.pp.ua/2017/02/22/hello-hexo/</loc>
+        <lastmod>2019-03-09T22:04:08.956Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://inotes.pp.ua/2017/03/27/kak-zashifrovat-sistemny-disk-s-pomoschyu-bitlocker/</loc>
+        <lastmod>2019-03-09T22:03:13.701Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://inotes.pp.ua/2017/01/28/emergency-mode-pri-zapuske-ubuntu-16-04/</loc>
+        <lastmod>2019-03-09T22:02:29.967Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://inotes.pp.ua/2017/08/10/test/</loc>
+        <lastmod>2019-03-09T22:01:02.590Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://inotes.pp.ua/2019/01/10/git-cheat-sheet/</loc>
+        <lastmod>2019-01-04T23:39:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +49,7 @@
 
     <url>
         <loc>https://inotes.pp.ua/2017/02/10/podborka-klassnyh-botov-i-kanalov-v-telegram/</loc>
-        <lastmod>2019-01-02T22:53:52.712Z</lastmod>
+        <lastmod>2019-01-02T22:53:52.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,7 +57,7 @@
 
     <url>
         <loc>https://inotes.pp.ua/2019/01/03/ubuntu-windows-gpt-uefi/</loc>
-        <lastmod>2019-01-02T22:28:59.523Z</lastmod>
+        <lastmod>2019-01-02T22:28:59.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -33,7 +65,7 @@
 
     <url>
         <loc>https://inotes.pp.ua/2018/12/29/hexo-blog-multiple-devices/</loc>
-        <lastmod>2018-12-30T11:44:43.657Z</lastmod>
+        <lastmod>2018-12-30T11:44:43.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -41,7 +73,7 @@
 
     <url>
         <loc>https://inotes.pp.ua/2018/12/23/spell-checking-sublime-text/</loc>
-        <lastmod>2018-12-26T21:12:44.145Z</lastmod>
+        <lastmod>2018-12-26T21:12:44.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -49,7 +81,7 @@
 
     <url>
         <loc>https://inotes.pp.ua/2018/12/20/sublime-text-icon-windows/</loc>
-        <lastmod>2018-12-23T21:27:27.753Z</lastmod>
+        <lastmod>2018-12-23T21:27:27.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -72,14 +104,6 @@
     </url>
 
     <url>
-        <loc>https://inotes.pp.ua/2017/08/10/test/</loc>
-        <lastmod>2017-08-10T21:14:27.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://inotes.pp.ua/2017/02/23/aforizmy/</loc>
         <lastmod>2017-07-28T23:27:10.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -88,32 +112,8 @@
     </url>
 
     <url>
-        <loc>https://inotes.pp.ua/2017/01/28/emergency-mode-pri-zapuske-ubuntu-16-04/</loc>
-        <lastmod>2017-06-10T18:31:49.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>https://inotes.pp.ua/2017/03/08/ne-rabotaet-internet-ot-intertelekom-na-miui-8-global-developer/</loc>
         <lastmod>2017-06-10T17:08:26.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://inotes.pp.ua/2017/03/27/kak-zashifrovat-sistemny-disk-s-pomoschyu-bitlocker/</loc>
-        <lastmod>2017-06-10T16:53:46.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://inotes.pp.ua/2017/02/22/hello-hexo/</loc>
-        <lastmod>2017-05-28T16:40:24.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

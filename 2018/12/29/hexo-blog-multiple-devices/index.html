@@ -100,19 +100,19 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
 
-<link rel="stylesheet" href="/css/main.css?v=7.0.0">
+<link rel="stylesheet" href="/css/main.css?v=7.0.1">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=7.0.1">
 
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=7.0.1">
 
 
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=7.0.1">
 
 
-  <link rel="mask-icon" href="/images/logo.svg?v=7.0.0" color="#222">
+  <link rel="mask-icon" href="/images/logo.svg?v=7.0.1" color="#222">
 
 
 
@@ -125,8 +125,10 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '7.0.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    version: '7.0.1',
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true,"dimmer":true},
+    back2top: true,
+    back2top_sidebar: false,
     fancybox: true,
     fastclick: true,
     lazyload: true,
@@ -156,7 +158,7 @@
 <meta property="og:site_name" content="iNotes">
 <meta property="og:description" content="После того как я переустановил и настроил Windows на стационарном ПК, движок Hexo почему-то не хотел полностью выполнять команду hexo g -d, которая отвечает за генерацию содержимого блога и публикацию">
 <meta property="og:locale" content="ru">
-<meta property="og:updated_time" content="2018-12-30T11:44:43.657Z">
+<meta property="og:updated_time" content="2018-12-30T11:44:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Управляем Hexo блогом на нескольких устройствах">
 <meta name="twitter:description" content="После того как я переустановил и настроил Windows на стационарном ПК, движок Hexo почему-то не хотел полностью выполнять команду hexo g -d, которая отвечает за генерацию содержимого блога и публикацию">
@@ -186,10 +188,13 @@
 
   <script async src="//www.googletagmanager.com/gtag/js?id=UA-90344659-1"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-90344659-1');
+    var host = window.location.hostname;
+    if (host !== "localhost" || !true) {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-90344659-1');
+    }
   </script>
 
 
@@ -482,8 +487,9 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
             
+                <span class="post-meta-item-text">Комментариев: </span>
                 <a href="/2018/12/29/hexo-blog-multiple-devices/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">Комментариев: </span> <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/12/29/hexo-blog-multiple-devices/" itemprop="commentCount"></span>
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/12/29/hexo-blog-multiple-devices/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -651,9 +657,6 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
-      <div id="sidebar-dimmer"></div>
-    
     <div class="sidebar-inner">
 
       
@@ -665,7 +668,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Sergey</p>
-              <p class="site-description motion-element" itemprop="description">Делюсь решениями к ситуациям и проблемам, с которыми столкнулся.</p>
+              <div class="site-description motion-element" itemprop="description">Делюсь решениями к ситуациям и проблемам, с которыми столкнулся.</div>
           </div>
 
           
@@ -687,7 +690,11 @@
                 
                 
                 <div class="site-state-item site-state-tags">
-                  <a href="/tags/index.html">
+                  
+                    
+                      <a href="/tags/">
+                    
+                  
                     
                     
                       
@@ -746,6 +753,9 @@
 
     </div>
   </aside>
+  
+    <div id="sidebar-dimmer"></div>
+  
 
 
         
@@ -816,9 +826,8 @@
 
     
       <div>
-        <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<div class="addthis_inline_share_toolbox">
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=5c28aa8a4f610cab" async="async"></script>
+        <div class="addthis_inline_share_toolbox">
+  <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=5c28aa8a4f610cab" async="async"></script>
 </div>
 
       </div>
@@ -891,33 +900,40 @@
   
 
 
-  <script src="/js/src/utils.js?v=7.0.0"></script>
+  <script src="/js/src/utils.js?v=7.0.1"></script>
 
-  <script src="/js/src/motion.js?v=7.0.0"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/src/schemes/muse.js?v=7.0.0"></script>
-
+  <script src="/js/src/motion.js?v=7.0.1"></script>
 
 
 
   
-  <script src="/js/src/scrollspy.js?v=7.0.0"></script>
-<script src="/js/src/post-details.js?v=7.0.0"></script>
+  
+
+
+  <script src="/js/src/schemes/muse.js?v=7.0.1"></script>
+
+
+
+
+  
+  <script src="/js/src/scrollspy.js?v=7.0.1"></script>
+<script src="/js/src/post-details.js?v=7.0.1"></script>
 
 
 
   
 
 
-  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
+  <script src="/js/src/next-boot.js?v=7.0.1"></script>
 
 
+  
+
+  
+  <script src="/js/src/exturl.js?v=7.0.1"></script>
+
+
+  
 
   
   
@@ -967,7 +983,6 @@
 
 
   
-
   <script>
     // Popup Window;
     var isfetched = false;
@@ -1311,91 +1326,86 @@
   
 
   
-  <script src="/js/src/exturl.js?v=7.0.0"></script>
-
 
   
 
   
-  <style>
-    .copy-btn {
-      display: inline-block;
-      padding: 6px 12px;
-      font-size: 13px;
-      font-weight: 700;
-      line-height: 20px;
-      color: #333;
-      white-space: nowrap;
-      vertical-align: middle;
-      cursor: pointer;
+<style>
+  .copy-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #333;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    
       background-color: #eee;
       background-image: linear-gradient(#fcfcfc, #eee);
       border: 1px solid #d5d5d5;
       border-radius: 3px;
-      user-select: none;
-      outline: 0;
-    }
+    
+    user-select: none;
+    outline: 0;
+  }
 
-    .highlight-wrap .copy-btn {
-      transition: opacity .3s ease-in-out;
-      opacity: 0;
-      padding: 2px 6px;
-      position: absolute;
+  .highlight-wrap .copy-btn {
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+    padding: 2px 6px;
+    position: absolute;
+    
       right: 4px;
       top: 8px;
-    }
+    
+  }
 
-    .highlight-wrap:hover .copy-btn,
-    .highlight-wrap .copy-btn:focus {
-      opacity: 1
-    }
+  .highlight-wrap:hover .copy-btn,
+  .highlight-wrap .copy-btn:focus {
+    opacity: 1;
+  }
 
-    .highlight-wrap {
-      position: relative;
-    }
-  </style>
-  <script>
-    $('.highlight').each(function(i, e) {
-      var $wrap = $('<div>').addClass('highlight-wrap');
-      $(e).after($wrap);
-      $wrap.append($('<button>').addClass('copy-btn').append('Скопировать').on('click', function(e) {
-        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
-          return $(e).text();
-        }).toArray().join('\n');
-        var ta = document.createElement('textarea');
-        var range = document.createRange(); //For Chrome
-        var sel = window.getSelection(); //For Chrome
-        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
-        ta.style.top = yPosition + 'px'; //Prevent page scroll
-        ta.style.position = 'absolute';
-        ta.style.opacity = '0';
-        ta.value = code;
-        ta.textContent = code; //For FireFox
-        ta.contentEditable = true;
-        ta.readOnly = false;
-        document.body.appendChild(ta);
-        range.selectNode(ta);
-        sel.removeAllRanges();
-        sel.addRange(range);
-        ta.setSelectionRange(0, code.length);
-        var result = document.execCommand('copy');
-        
-          if (result) $(this).text('Скопировано!');
-          else $(this).text('Ошибка копирования!');
-        
-        ta.blur(); //For iOS
-        $(this).blur();
-      })).on('mouseleave', function(e) {
-        var $b = $(this).find('.copy-btn');
-        setTimeout(function() {
-          $b.text('Скопировать');
-        }, 300);
-      }).append(e);
-    })
-  </script>
+  .highlight-wrap {
+    position: relative;
+  }
+</style>
+<script>
+  $('.highlight').each(function(i, e) {
+    var $wrap = $('<div>').addClass('highlight-wrap');
+    $(e).after($wrap);
+    $wrap.append($('<button>').addClass('copy-btn').append('Скопировать').on('click', function(e) {
+      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+        return $(e).text();
+      }).toArray().join('\n');
+      var ta = document.createElement('textarea');
+      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+      ta.style.top = yPosition + 'px'; // Prevent page scroll
+      ta.style.position = 'absolute';
+      ta.style.opacity = '0';
+      ta.readOnly = true;
+      ta.value = code;
+      document.body.appendChild(ta);
+      ta.select();
+      ta.setSelectionRange(0, code.length);
+      ta.readOnly = false;
+      var result = document.execCommand('copy');
+      
+        if (result) $(this).text('Скопировано!');
+        else $(this).text('Ошибка копирования!');
+      
+      ta.blur(); // For iOS
+      $(this).blur();
+    })).on('mouseleave', function(e) {
+      var $b = $(this).find('.copy-btn');
+      setTimeout(function() {
+        $b.text('Скопировать');
+      }, 300);
+    }).append(e);
+  })
+</script>
 
-
-  
 
 </body>
 </html>
