@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="ru">
+<html class="theme-next gemini use-motion" lang="ru">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -124,11 +124,9 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Gemini',
     version: '7.0.1',
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true,"dimmer":true},
-    back2top: true,
-    back2top_sidebar: false,
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false,"dimmer":false},
     fancybox: true,
     fastclick: true,
     lazyload: true,
@@ -164,6 +162,8 @@
 <meta name="twitter:description" content="Делюсь решениями к ситуациям и проблемам, с которыми столкнулся.">
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="iNotes" type="application/atom+xml">
 
@@ -186,7 +186,7 @@
 
 
 
-  <script async src="//www.googletagmanager.com/gtag/js?id=UA-90344659-1"></script>
+  <script async src="//www.googletagmanager.com/gtag/js?id=[object Object]"></script>
   <script>
     var host = window.location.hostname;
     if (host !== "localhost" || !true) {
@@ -349,25 +349,6 @@
   
 
   
-    
-
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
-  
 
   
     <div class="site-search">
@@ -408,6 +389,25 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
+    
+    
+      
+      
+    
+      
+      
+    
+      
+      
+    
+    
+
+  
+
+
           
           <div id="content" class="content">
             
@@ -482,9 +482,7 @@
               9 тэгов всего.
             </div>
             <div class="tag-cloud-tags">
-              
-                <a href="/tags/Android/" style="font-size: 12px; color: #ccc">Android</a> <a href="/tags/Git/" style="font-size: 12px; color: #ccc">Git</a> <a href="/tags/Hexo/" style="font-size: 30px; color: #111">Hexo</a> <a href="/tags/MIUI/" style="font-size: 12px; color: #ccc">MIUI</a> <a href="/tags/Sublime-Text/" style="font-size: 21px; color: #6f6f6f">Sublime Text</a> <a href="/tags/Telegram/" style="font-size: 12px; color: #ccc">Telegram</a> <a href="/tags/Ubuntu/" style="font-size: 30px; color: #111">Ubuntu</a> <a href="/tags/Windows/" style="font-size: 21px; color: #6f6f6f">Windows</a> <a href="/tags/test/" style="font-size: 12px; color: #ccc">test</a>
-              
+              <a href="/tags/Android/" style="font-size: 12px; color: #ccc">Android</a> <a href="/tags/Git/" style="font-size: 12px; color: #ccc">Git</a> <a href="/tags/Hexo/" style="font-size: 30px; color: #111">Hexo</a> <a href="/tags/MIUI/" style="font-size: 12px; color: #ccc">MIUI</a> <a href="/tags/Sublime-Text/" style="font-size: 21px; color: #6f6f6f">Sublime Text</a> <a href="/tags/Telegram/" style="font-size: 12px; color: #ccc">Telegram</a> <a href="/tags/Ubuntu/" style="font-size: 30px; color: #111">Ubuntu</a> <a href="/tags/Windows/" style="font-size: 21px; color: #6f6f6f">Windows</a> <a href="/tags/test/" style="font-size: 12px; color: #ccc">test</a>
             </div>
           </div>
         
@@ -530,7 +528,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Sergey</p>
-              <div class="site-description motion-element" itemprop="description">Делюсь решениями к ситуациям и проблемам, с которыми столкнулся.</div>
+              <p class="site-description motion-element" itemprop="description">Делюсь решениями к ситуациям и проблемам, с которыми столкнулся.</p>
           </div>
 
           
@@ -552,11 +550,7 @@
                 
                 
                 <div class="site-state-item site-state-tags">
-                  
-                    
-                      <a href="/tags/">
-                    
-                  
+                  <a href="/tags/index.html">
                     
                     
                       
@@ -616,8 +610,6 @@
     </div>
   </aside>
   
-    <div id="sidebar-dimmer"></div>
-  
 
 
         
@@ -655,7 +647,7 @@
 
 
 
-  <div class="theme-info">Тема – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Mist</span></div>
+  <div class="theme-info">Тема – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span></div>
 
 
 
@@ -772,7 +764,9 @@
   
 
 
-  <script src="/js/src/schemes/muse.js?v=7.0.1"></script>
+  <script src="/js/src/affix.js?v=7.0.1"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=7.0.1"></script>
 
 
 
@@ -786,17 +780,10 @@
   
 
 
-  <script src="/js/src/next-boot.js?v=7.0.1"></script>
+  <script src="/js/src/bootstrap.js?v=7.0.1"></script>
 
 
   
-
-  
-  <script src="/js/src/exturl.js?v=7.0.1"></script>
-
-
-  
-
   
   
   <script id="dsq-count-scr" src="https://inotes-blog.disqus.com/count.js" async></script>
@@ -1153,83 +1140,87 @@
   
 
   
+  <script src="/js/src/exturl.js?v=7.0.1"></script>
+
 
   
-<style>
-  .copy-btn {
-    display: inline-block;
-    padding: 6px 12px;
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 20px;
-    color: #333;
-    white-space: nowrap;
-    vertical-align: middle;
-    cursor: pointer;
-    
-      background-color: #eee;
-      background-image: linear-gradient(#fcfcfc, #eee);
-      border: 1px solid #d5d5d5;
-      border-radius: 3px;
-    
-    user-select: none;
-    outline: 0;
-  }
 
-  .highlight-wrap .copy-btn {
-    transition: opacity .3s ease-in-out;
-    opacity: 0;
-    padding: 2px 6px;
-    position: absolute;
-    
-      right: 4px;
-      top: 8px;
-    
-  }
-
-  .highlight-wrap:hover .copy-btn,
-  .highlight-wrap .copy-btn:focus {
-    opacity: 1;
-  }
-
-  .highlight-wrap {
-    position: relative;
-  }
-</style>
-<script>
-  $('.highlight').each(function(i, e) {
-    var $wrap = $('<div>').addClass('highlight-wrap');
-    $(e).after($wrap);
-    $wrap.append($('<button>').addClass('copy-btn').append('Скопировать').on('click', function(e) {
-      var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
-        return $(e).text();
-      }).toArray().join('\n');
-      var ta = document.createElement('textarea');
-      var yPosition = window.pageYOffset || document.documentElement.scrollTop;
-      ta.style.top = yPosition + 'px'; // Prevent page scroll
-      ta.style.position = 'absolute';
-      ta.style.opacity = '0';
-      ta.readOnly = true;
-      ta.value = code;
-      document.body.appendChild(ta);
-      ta.select();
-      ta.setSelectionRange(0, code.length);
-      ta.readOnly = false;
-      var result = document.execCommand('copy');
+  
+  <style>
+    .copy-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #333;
+      white-space: nowrap;
+      vertical-align: middle;
+      cursor: pointer;
       
-        if (result) $(this).text('Скопировано!');
-        else $(this).text('Ошибка копирования!');
+        background-color: #eee;
+        background-image: linear-gradient(#fcfcfc, #eee);
+        border: 1px solid #d5d5d5;
+        border-radius: 3px;
       
-      ta.blur(); // For iOS
-      $(this).blur();
-    })).on('mouseleave', function(e) {
-      var $b = $(this).find('.copy-btn');
-      setTimeout(function() {
-        $b.text('Скопировать');
-      }, 300);
-    }).append(e);
-  })
-</script>
+      user-select: none;
+      outline: 0;
+    }
+
+    .highlight-wrap .copy-btn {
+      transition: opacity .3s ease-in-out;
+      opacity: 0;
+      padding: 2px 6px;
+      position: absolute;
+      
+        right: 4px;
+        top: 8px;
+      
+    }
+
+    .highlight-wrap:hover .copy-btn,
+    .highlight-wrap .copy-btn:focus {
+      opacity: 1;
+    }
+
+    .highlight-wrap {
+      position: relative;
+    }
+  </style>
+  <script>
+    $('.highlight').each(function(i, e) {
+      var $wrap = $('<div>').addClass('highlight-wrap');
+      $(e).after($wrap);
+      $wrap.append($('<button>').addClass('copy-btn').append('Скопировать').on('click', function(e) {
+        var code = $(this).parent().find('.code').find('.line').map(function(i, e) {
+          return $(e).text();
+        }).toArray().join('\n');
+        var ta = document.createElement('textarea');
+        var yPosition = window.pageYOffset || document.documentElement.scrollTop;
+        ta.style.top = yPosition + 'px'; // Prevent page scroll
+        ta.style.position = 'absolute';
+        ta.style.opacity = '0';
+        ta.readOnly = true;
+        ta.value = code;
+        document.body.appendChild(ta);
+        ta.select();
+        ta.setSelectionRange(0, code.length);
+        ta.readOnly = false;
+        var result = document.execCommand('copy');
+        
+          if (result) $(this).text('Скопировано!');
+          else $(this).text('Ошибка копирования!');
+        
+        ta.blur(); // For iOS
+        $(this).blur();
+      })).on('mouseleave', function(e) {
+        var $b = $(this).find('.copy-btn');
+        setTimeout(function() {
+          $b.text('Скопировать');
+        }, 300);
+      }).append(e);
+    })
+  </script>
 
 
 </body>
