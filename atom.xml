@@ -20,7 +20,7 @@
     <title>Шпаргалка по использованию Git</title>
     <link href="https://inotes.pp.ua/2019/01/10/git-cheat-sheet/"/>
     <id>https://inotes.pp.ua/2019/01/10/git-cheat-sheet/</id>
-    <published>2019-01-10T16:33:07.575Z</published>
+    <published>2019-01-10T16:33:00.139Z</published>
     <updated>2019-01-04T23:39:47.000Z</updated>
     
     <content type="html"><![CDATA[<p>В этом материале я буду собирать шпаргалки по использованию Git. Только то, что лично полезно мне. Может быть со временем данная информация окажется в закладках у кого-то из вас.</p><a id="more"></a><ul><li><code>git init</code> — создать новый репозиторий;</li><li><code>git add -A</code> — добавить все файлы для отслеживания;</li><li><code>git commit -m &quot;Добавил все файлы&quot;</code> — зафиксировать внесённые изменения с комментарием.</li></ul><p>Парочка полезных картинок для понимания отличий между некоторыми командами (<span class="exturl" data-url="aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL2EvMjYwMzkwMTQvMzk1MjgyNg==" title="http://stackoverflow.com/a/26039014/3952826">источник<i class="fa fa-external-link"></i></span>):</p><img src="/2019/01/10/git-cheat-sheet/git-cheat-sheet_01.jpg" title="Как было в Git версии 1.x"><img src="/2019/01/10/git-cheat-sheet/git-cheat-sheet_02.jpg" title="Как сейчас в Git версии 2.x"><ul><li><code>git add -A</code> эквивалентна команде <code>git add --all</code></li><li><code>git add -u</code> эквивалентна команде <code>git add --update</code></li></ul><p>Продолжение следует…</p>]]></content>
