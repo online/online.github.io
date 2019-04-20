@@ -49,50 +49,6 @@
 
 
 
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-    
-      
-    
-
-    
-  
-
-  
-
-  
-    
-    
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Tahoma:300,300italic,400,400italic,700,700italic|Tahoma:300,300italic,400,400italic,700,700italic|Tahoma:300,300italic,400,400italic,700,700italic|Tahoma:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
-  
-
-
-
 
 
 
@@ -148,7 +104,7 @@
 <meta property="og:site_name" content="iNotes">
 <meta property="og:description" content="Сегодня много времени ушло на поиск решения по установке Ubuntu 18.04 LTS рядом с Windows 10 на мой ноутбук Acer Aspire E 15 (E5-575G-54YF). Казалось бы, ничего сложного в этом нет, но всякие там нюан">
 <meta property="og:locale" content="ru">
-<meta property="og:updated_time" content="2019-01-02T22:28:59.523Z">
+<meta property="og:updated_time" content="2019-04-20T21:02:51.585Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Установка Ubuntu рядом с Windows на GPT раздел (UEFI)">
 <meta name="twitter:description" content="Сегодня много времени ушло на поиск решения по установке Ubuntu 18.04 LTS рядом с Windows 10 на мой ноутбук Acer Aspire E 15 (E5-575G-54YF). Казалось бы, ничего сложного в этом нет, но всякие там нюан">
@@ -446,12 +402,22 @@
                 
               
 
-              <time title="Создано: 03.01.2019 00:00:00 / Изменено: 00:28:59" itemprop="dateCreated datePublished" datetime="2019-01-03T00:00:00+02:00">03.01.2019</time>
+              <time title="Создано: 03.01.2019 00:00:00" itemprop="dateCreated datePublished" datetime="2019-01-03T00:00:00+02:00">03.01.2019</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                <time title="Изменено: 21.04.2019 00:02:51" itemprop="dateModified" datetime="2019-04-21T00:02:51+03:00">21.04.2019</time>
               
             
           </span>
@@ -521,12 +487,12 @@
 <p>В сети много инструкций по корректной установке этих двух операционных систем на одном компьютере, я же в данной заметке опишу своё решение проблемы, которое не было на поверхности. </p>
 <p>Вот, что нужно было настроить в BIOS, чтобы я смог увидеть загрузчик GRUB:</p>
 <ol>
-<li>На вкладке “<em>Security</em>“ в пункте “<em>Set Supervisor Password</em>“ устанавливаем пароль для входа в BIOS;</li>
-<li>Идём во вкладку “<em>Boot</em>“. Переключаем “<em>Secure Boot</em>“ в статус “<em>Enabled</em>“, после этого нам станут доступны дополнительные опции на вкладке “<em>Security</em>“;</li>
-<li>На вкладке “<em>Security</em>“ жмём на “<em>Select an UEFI file as trusted for executing</em>“;</li>
-<li>Затем нажимаем на “<em>HDD1</em>“ ➡ “<em>EFI</em>“ ➡ “<em>ubuntu</em>“ ➡ “<em>shimx64.efi</em>“ ➡ вписываем, например, “<em>Ubuntu</em>“;</li>
-<li>Возвращаемся обратно (<kbd>Esc</kbd>) и идём во вкладку “<em>Boot</em>“ и меняем значение “<em>Secure Boot</em>“ на “<em>Disabled</em>“;</li>
-<li>Перезагружаемся снова в BIOS и видим, что в “<em>Boot priority order</em>“ появилось новое значение “<em>EFI File Boot 0: Ubuntu</em>“, ставим его первым в списке.</li>
+<li>На вкладке «Security» в пункте «Set Supervisor Password» устанавливаем пароль для входа в BIOS;</li>
+<li>Идём во вкладку «Boot». Переключаем «Secure Boot» в статус «Enabled», после этого нам станут доступны дополнительные опции на вкладке «Security»;</li>
+<li>На вкладке «Security» жмём на «Select an UEFI file as trusted for executing»;</li>
+<li>Затем нажимаем на «HDD1» ➡ «EFI» ➡ «ubuntu» ➡ «shimx64.efi» ➡ вписываем, например, «Ubuntu»;</li>
+<li>Возвращаемся обратно (<kbd>Esc</kbd>) и идём во вкладку «Boot» и меняем значение «Secure Boot» на «Disabled»;</li>
+<li>Перезагружаемся снова в BIOS и видим, что в «Boot priority order» появилось новое значение «EFI File Boot 0: Ubuntu», ставим его первым в списке.</li>
 </ol>
 <p>За решение данной проблемы хочу сказать спасибо ребятам с <span class="exturl" data-url="aHR0cHM6Ly9mb3J1bS51YnVudHUucnUvaW5kZXgucGhwP3RvcGljPTMwMTc4OC5tc2cyMzY0MDcxI21zZzIzNjQwNzE=" title="https://forum.ubuntu.ru/index.php?topic=301788.msg2364071#msg2364071">форума Ubuntu<i class="fa fa-external-link"></i></span>.</p>
 
@@ -651,7 +617,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/05/git-cheat-sheet/" rel="prev" title="Шпаргалка по использованию Git">
+              <a href="/2019/01/10/git-cheat-sheet/" rel="prev" title="Шпаргалка по использованию Git">
                 Шпаргалка по использованию Git <i class="fa fa-chevron-right"></i>
               </a>
             
