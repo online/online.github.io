@@ -9,7 +9,7 @@
 
     <url>
         <loc>https://inotes.pp.ua/2019/01/03/ubuntu-windows-gpt-uefi/</loc>
-        <lastmod>2019-04-20T21:02:51.585Z</lastmod>
+        <lastmod>2019-04-20T21:02:51.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -17,7 +17,7 @@
 
     <url>
         <loc>https://inotes.pp.ua/2017/02/22/hello-hexo/</loc>
-        <lastmod>2019-03-09T22:04:08.956Z</lastmod>
+        <lastmod>2019-03-09T22:04:08.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -25,7 +25,7 @@
 
     <url>
         <loc>https://inotes.pp.ua/2017/03/27/kak-zashifrovat-sistemny-disk-s-pomoschyu-bitlocker/</loc>
-        <lastmod>2019-03-09T22:03:13.701Z</lastmod>
+        <lastmod>2019-03-09T22:03:13.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -33,7 +33,7 @@
 
     <url>
         <loc>https://inotes.pp.ua/2017/01/28/emergency-mode-pri-zapuske-ubuntu-16-04/</loc>
-        <lastmod>2019-03-09T22:02:29.967Z</lastmod>
+        <lastmod>2019-03-09T22:02:29.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -41,14 +41,14 @@
 
     <url>
         <loc>https://inotes.pp.ua/2017/08/10/test/</loc>
-        <lastmod>2019-03-09T22:01:02.590Z</lastmod>
+        <lastmod>2019-03-09T22:01:02.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
     </url>
 
     <url>
-        <loc>https://inotes.pp.ua/2019/01/10/git-cheat-sheet/</loc>
+        <loc>https://inotes.pp.ua/2019/04/22/git-cheat-sheet/</loc>
         <lastmod>2019-01-04T23:39:47.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
