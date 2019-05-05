@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="iNotes">
 <meta property="og:description" content="В Sublime Text по умолчанию есть проверка орфографии для английского языка, но, к сожалению, отсутствует для русского. В этом материале я поделюсь информацией о том, как исправить эту несправедливость">
 <meta property="og:locale" content="ru">
-<meta property="og:updated_time" content="2018-12-26T21:12:44.000Z">
+<meta property="og:updated_time" content="2018-12-26T21:12:44.145Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Проверка орфографии в Sublime Text 2&#x2F;3">
 <meta name="twitter:description" content="В Sublime Text по умолчанию есть проверка орфографии для английского языка, но, к сожалению, отсутствует для русского. В этом материале я поделюсь информацией о том, как исправить эту несправедливость">
@@ -452,15 +452,21 @@
               
 
               
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="Кол-во символов в статье">2.5k</span>
+              
 
+              
+                <span class="post-meta-divider">|</span>
               
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">Время чтения &asymp;</span>
                 
                 <span title="Время чтения">2 мин.</span>
               
@@ -798,6 +804,13 @@
   <span class="author" itemprop="copyrightHolder">Sergey</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="Общее кол-во символов">29k</span>
+  
 
   
     <span class="post-meta-divider">|</span>
@@ -805,9 +818,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-      <span class="post-meta-item-text">Общее время чтения &asymp;</span>
-    
-    <span title="Общее время чтения">27 мин.</span>
+    <span title="Общее время чтения">18 мин.</span>
   
 </div>
 
@@ -1355,7 +1366,7 @@
 
   
 <script>
-  $('.highlight').each(function(i, e) {
+  $('.highlight').not('.gist .highlight').each(function(i, e) {
     var $wrap = $('<div>').addClass('highlight-wrap');
     $(e).after($wrap);
     $wrap.append($('<button>').addClass('copy-btn').append('Скопировать').on('click', function(e) {

@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="iNotes">
 <meta property="og:description" content="После того как я переустановил и настроил Windows на стационарном ПК, движок Hexo почему-то не хотел полностью выполнять команду hexo g -d, которая отвечает за генерацию содержимого блога и публикацию">
 <meta property="og:locale" content="ru">
-<meta property="og:updated_time" content="2018-12-30T11:44:43.000Z">
+<meta property="og:updated_time" content="2018-12-30T11:44:43.657Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Управляем Hexo блогом на нескольких устройствах">
 <meta name="twitter:description" content="После того как я переустановил и настроил Windows на стационарном ПК, движок Hexo почему-то не хотел полностью выполнять команду hexo g -d, которая отвечает за генерацию содержимого блога и публикацию">
@@ -452,15 +452,21 @@
               
 
               
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                <span title="Кол-во символов в статье">821</span>
+              
 
+              
+                <span class="post-meta-divider">|</span>
               
 
               
                 <span class="post-meta-item-icon">
                   <i class="fa fa-clock-o"></i>
                 </span>
-                
-                  <span class="post-meta-item-text">Время чтения &asymp;</span>
                 
                 <span title="Время чтения">1 мин.</span>
               
@@ -769,6 +775,13 @@
   <span class="author" itemprop="copyrightHolder">Sergey</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="Общее кол-во символов">29k</span>
+  
 
   
     <span class="post-meta-divider">|</span>
@@ -776,9 +789,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-      <span class="post-meta-item-text">Общее время чтения &asymp;</span>
-    
-    <span title="Общее время чтения">27 мин.</span>
+    <span title="Общее время чтения">18 мин.</span>
   
 </div>
 
@@ -1326,7 +1337,7 @@
 
   
 <script>
-  $('.highlight').each(function(i, e) {
+  $('.highlight').not('.gist .highlight').each(function(i, e) {
     var $wrap = $('<div>').addClass('highlight-wrap');
     $(e).after($wrap);
     $wrap.append($('<button>').addClass('copy-btn').append('Скопировать').on('click', function(e) {

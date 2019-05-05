@@ -544,6 +544,13 @@
   <span class="author" itemprop="copyrightHolder">Sergey</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="Общее кол-во символов">29k</span>
+  
 
   
     <span class="post-meta-divider">|</span>
@@ -551,9 +558,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-      <span class="post-meta-item-text">Общее время чтения &asymp;</span>
-    
-    <span title="Общее время чтения">27 мин.</span>
+    <span title="Общее время чтения">18 мин.</span>
   
 </div>
 
@@ -1060,7 +1065,7 @@
 
   
 <script>
-  $('.highlight').each(function(i, e) {
+  $('.highlight').not('.gist .highlight').each(function(i, e) {
     var $wrap = $('<div>').addClass('highlight-wrap');
     $(e).after($wrap);
     $wrap.append($('<button>').addClass('copy-btn').append('Скопировать').on('click', function(e) {
