@@ -54,7 +54,7 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
 
-<link rel="stylesheet" href="/css/main.css?v=7.1.1">
+<link rel="stylesheet" href="/css/main.css?v=7.1.2">
 
 
 
@@ -71,7 +71,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Gemini',
-    version: '7.1.1',
+    version: '7.1.2',
     sidebar: {"position":"left","display":"post","offset":12},
     back2top: true,
     back2top_sidebar: true,
@@ -110,6 +110,8 @@
 <meta name="twitter:description" content="Запрашиваемая страница не найдена">
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="iNotes" type="application/atom+xml">
 
@@ -133,7 +135,7 @@
 
 
 
-  <script async src="//www.googletagmanager.com/gtag/js?id=UA-90344659-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90344659-1"></script>
   <script>
     var host = window.location.hostname;
     if (host !== "localhost" || !true) {
@@ -574,7 +576,7 @@
 
 
 
-  <div class="theme-info">Тема – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.1.1</div>
+  <div class="theme-info">Тема – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.1.2</div>
 
 
 
@@ -667,39 +669,39 @@
   
 
 
-  <script src="/js/utils.js?v=7.1.1"></script>
+  <script src="/js/utils.js?v=7.1.2"></script>
 
-  <script src="/js/motion.js?v=7.1.1"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/affix.js?v=7.1.1"></script>
-
-  <script src="/js/schemes/pisces.js?v=7.1.1"></script>
-
+  <script src="/js/motion.js?v=7.1.2"></script>
 
 
 
   
-  <script src="/js/scrollspy.js?v=7.1.1"></script>
-<script src="/js/post-details.js?v=7.1.1"></script>
+  
+
+
+  <script src="/js/affix.js?v=7.1.2"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.1.2"></script>
+<script src="/js/post-details.js?v=7.1.2"></script>
 
 
 
   
 
 
-  <script src="/js/next-boot.js?v=7.1.1"></script>
+  <script src="/js/next-boot.js?v=7.1.2"></script>
 
 
   
 
   
-  <script src="/js/exturl.js?v=7.1.1"></script>
+  <script src="/js/exturl.js?v=7.1.2"></script>
 
 
   
@@ -1087,6 +1089,8 @@
       ta.readOnly = true;
       ta.value = code;
       document.body.appendChild(ta);
+      const selection = document.getSelection();
+      const selected = selection.rangeCount > 0 ? selection.getRangeAt(0) : false;
       ta.select();
       ta.setSelectionRange(0, code.length);
       ta.readOnly = false;
@@ -1097,6 +1101,10 @@
       
       ta.blur(); // For iOS
       $(this).blur();
+      if (selected) {
+        selection.removeAllRanges();
+        selection.addRange(selected);
+      }
     })).on('mouseleave', function(e) {
       var $b = $(this).find('.copy-btn');
       setTimeout(function() {
