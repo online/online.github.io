@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
 
 <link rel="stylesheet" href="/css/main.css?v=7.1.2">
 
@@ -552,11 +552,14 @@
 
     <footer class="post-footer">
       
+        
+          
+        
         <div class="post-tags">
           
-            <a href="/tags/Ubuntu/" rel="tag"># Ubuntu</a>
+            <a href="/tags/Ubuntu/" rel="tag"><i class="fa fa-tag"></i> Ubuntu</a>
           
-            <a href="/tags/Windows/" rel="tag"># Windows</a>
+            <a href="/tags/Windows/" rel="tag"><i class="fa fa-tag"></i> Windows</a>
           
         </div>
       
@@ -623,7 +626,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/05/git-cheat-sheet/" rel="prev" title="Шпаргалка по использованию Git">
+              <a href="/2019/04/22/git-cheat-sheet/" rel="prev" title="Шпаргалка по использованию Git">
                 Шпаргалка по использованию Git <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -888,7 +891,7 @@
 
 
   
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
 
   
   <script src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
@@ -960,7 +963,16 @@
 
   
   
-  <script id="dsq-count-scr" src="https://inotes-blog.disqus.com/count.js" async></script>
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://inotes-blog.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
 
 
 <script>
@@ -980,7 +992,7 @@
       var offsetTop = $('#comments').offset().top - $(window).height();
       if (offsetTop <= 0) {
         // load directly when there's no a scrollbar
-        loadComments();
+        window.addEventListener('load', loadComments, false);
       } else {
         $(window).on('scroll.disqus_scroll', function() {
           // offsetTop may changes because of manually resizing browser window or lazy loading images.

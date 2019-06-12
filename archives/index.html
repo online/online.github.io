@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
 
 <link rel="stylesheet" href="/css/main.css?v=7.1.2">
 
@@ -388,7 +388,7 @@
 
       <h3 class="post-title">
         
-          <a class="post-title-link" href="/2019/01/05/git-cheat-sheet/" itemprop="url">
+          <a class="post-title-link" href="/2019/04/22/git-cheat-sheet/" itemprop="url">
             
               <span itemprop="name">Шпаргалка по использованию Git</span>
             
@@ -397,8 +397,8 @@
       </h3>
 
       <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-01-05T01:34:08+02:00" content="05.01.2019">
-          01-05
+        <time class="post-time" itemprop="dateCreated" datetime="2019-04-22T01:08:43+03:00" content="22.04.2019">
+          04-22
         </time>
       </div>
 
@@ -498,7 +498,7 @@
 
       <h3 class="post-title">
         
-          <a class="post-title-link" href="/2018/12/23/spell-checking-sublime-text/" itemprop="url">
+          <a class="post-title-link" href="/2018/12/24/spell-checking-sublime-text/" itemprop="url">
             
               <span itemprop="name">Проверка орфографии в Sublime Text 2/3</span>
             
@@ -713,7 +713,7 @@
 
       <h3 class="post-title">
         
-          <a class="post-title-link" href="/2017/02/23/aforizmy/" itemprop="url">
+          <a class="post-title-link" href="/2017/02/24/aforizmy/" itemprop="url">
             
               <span itemprop="name">Афоризмы</span>
             
@@ -981,7 +981,7 @@
 
 
   
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
 
   
   <script src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
@@ -1068,7 +1068,16 @@
 
   
   
-  <script id="dsq-count-scr" src="https://inotes-blog.disqus.com/count.js" async></script>
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://inotes-blog.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
 
 
 

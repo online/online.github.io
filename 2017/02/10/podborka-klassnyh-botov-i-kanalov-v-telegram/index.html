@@ -52,7 +52,7 @@
 
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
 
 <link rel="stylesheet" href="/css/main.css?v=7.1.2">
 
@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="iNotes">
 <meta property="og:description" content="Список интересных групп, каналов и ботов в Телеграме (пополняется). Если у вас есть интересные каналы, группы, чаты или боты, пожалуйста, делитесь в комментариях к данной заметке. С удовольствием внес">
 <meta property="og:locale" content="ru">
-<meta property="og:updated_time" content="2019-01-02T22:53:52.712Z">
+<meta property="og:updated_time" content="2019-01-02T22:53:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Подборка классных ботов и каналов в Telegram">
 <meta name="twitter:description" content="Список интересных групп, каналов и ботов в Телеграме (пополняется). Если у вас есть интересные каналы, группы, чаты или боты, пожалуйста, делитесь в комментариях к данной заметке. С удовольствием внес">
@@ -540,9 +540,12 @@
 
     <footer class="post-footer">
       
+        
+          
+        
         <div class="post-tags">
           
-            <a href="/tags/Telegram/" rel="tag"># Telegram</a>
+            <a href="/tags/Telegram/" rel="tag"><i class="fa fa-tag"></i> Telegram</a>
           
         </div>
       
@@ -900,7 +903,7 @@
 
 
   
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
 
   
   <script src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
@@ -972,7 +975,16 @@
 
   
   
-  <script id="dsq-count-scr" src="https://inotes-blog.disqus.com/count.js" async></script>
+<script>
+  function loadCount() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://inotes-blog.disqus.com/count.js';
+    s.id = 'dsq-count-scr';
+    (d.head || d.body).appendChild(s);
+  }
+  // defer loading until the whole page loading is completed
+  window.addEventListener('load', loadCount, false);
+</script>
 
 
 <script>
@@ -992,7 +1004,7 @@
       var offsetTop = $('#comments').offset().top - $(window).height();
       if (offsetTop <= 0) {
         // load directly when there's no a scrollbar
-        loadComments();
+        window.addEventListener('load', loadComments, false);
       } else {
         $(window).on('scroll.disqus_scroll', function() {
           // offsetTop may changes because of manually resizing browser window or lazy loading images.
