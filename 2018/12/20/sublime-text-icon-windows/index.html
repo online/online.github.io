@@ -15,13 +15,11 @@
 
 
 <html class="theme-next gemini use-motion" lang="ru">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-
-
 
 
 
@@ -54,7 +52,7 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
 
-<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
 
 
 
@@ -71,7 +69,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Gemini',
-    version: '7.1.2',
+    version: '7.2.0',
     sidebar: {"position":"left","display":"post","offset":12},
     back2top: true,
     back2top_sidebar: true,
@@ -182,7 +180,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="ru">
+<body itemscope itemtype="http://schema.org/WebPage" lang="ru">
 
   
   
@@ -192,7 +190,7 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta">
     
@@ -235,7 +233,6 @@
 
     
     
-    
       
     
 
@@ -254,7 +251,6 @@
 
     
     
-    
       
     
 
@@ -271,7 +267,6 @@
           
           <li class="menu-item menu-item-archives">
 
-    
     
     
       
@@ -359,20 +354,20 @@
     <div class="reading-progress-bar"></div>
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://inotes.pp.ua/2018/12/20/sublime-text-icon-windows/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sergey">
       <meta itemprop="description" content="Делюсь решениями к ситуациям и проблемам, с которыми столкнулся.">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="iNotes">
     </span>
 
@@ -389,13 +384,13 @@
         
 
         <div class="post-meta">
-          <span class="post-time">
 
-            
-            
-            
+          
+          
+          
 
-            
+          
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
@@ -406,33 +401,30 @@
               
 
               <time title="Создано: 20.12.2018 00:41:40" itemprop="dateCreated datePublished" datetime="2018-12-20T00:41:40+02:00">20.12.2018</time>
+            </span>
+          
+
+          
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
                 <time title="Изменено: 23.12.2018 23:27:27" itemprop="dateModified" datetime="2018-12-23T23:27:27+02:00">23.12.2018</time>
-              
+              </span>
             
-          </span>
-
           
 
           
+
+          
             
             
               
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
@@ -450,30 +442,25 @@
 
           
 
+          <br>
           
-            <div class="post-symbolscount">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
               
+              <span title="Кол-во символов в статье">853</span>
+            </span>
+          
 
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
               
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="Кол-во символов в статье">848</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                <span title="Время чтения">1 мин.</span>
-              
-            </div>
+              <span title="Время чтения">1 мин.</span>
+            </span>
           
 
           
@@ -493,13 +480,18 @@
       
         <p>После установки Sublime Text в Windows 10 я обнаружил, что при вызове контекстного меню в пункте “Open With Sublime Text” отсутствует иконка этого редактора, но, к счастью, это легко исправить, выполнив несколько несложных операций.</p>
 <a id="more"></a>
+
 <p>С помощью комбинации клавиш <kbd>Win</kbd> + <kbd>R</kbd> вызовите меню “<em>Выполнить</em>” и введите в нём <code>regedit</code> для запуска редактора реестра. В редакторе перейдите по пути:</p>
 <figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line">HKEY_CLASSES_ROOT<span class="symbol">\*</span><span class="symbol">\s</span>hell<span class="symbol">\O</span>pen with Sublime Text</span><br></pre></td></tr></table></figure>
+
 <p>В этой ветке реестра необходимо нажать <em>Создать</em> → <em>Строковый параметр</em> и в поле <em>Имя</em> укажите значение <code>Icon</code>, а в поле <em>Значение</em> укажите путь к exe-файлу, как показано ниже (кавычки обязательны):</p>
 <figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line">"C:<span class="symbol">\P</span>rogram Files<span class="symbol">\S</span>ublime Text 3<span class="symbol">\s</span>ublime_text.exe"</span><br></pre></td></tr></table></figure>
+
 <img src="/2018/12/20/sublime-text-icon-windows/Sublime-Text-regedit.png" title="Вот как это выглядит на скриншоте">
+
 <p>Если вы всё сделали правильно, то в контекстном меню пункт “Open With Sublime Text” будет выглядеть так:</p>
 <img src="/2018/12/20/sublime-text-icon-windows/Context-menu-Sublime-Text.png" title="Вот как это выглядит на скриншоте">
+
 <p>Аналогичным образом можно добавить иконку для любой другой программы.</p>
 
       
@@ -666,7 +658,7 @@
 
       <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Sergey</p>
               <div class="site-description motion-element" itemprop="description">Делюсь решениями к ситуациям и проблемам, с которыми столкнулся.</div>
@@ -798,7 +790,7 @@
 </div>
 
 
-  <div class="powered-by">Генератор — <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.8.0</div>
+  <div class="powered-by">Генератор — <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.9.0</div>
 
 
 
@@ -806,7 +798,7 @@
 
 
 
-  <div class="theme-info">Тема – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.1.2</div>
+  <div class="theme-info">Тема – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.2.0</div>
 
 
 
@@ -899,39 +891,39 @@
   
 
 
-  <script src="/js/utils.js?v=7.1.2"></script>
+  <script src="/js/utils.js?v=7.2.0"></script>
 
-  <script src="/js/motion.js?v=7.1.2"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/affix.js?v=7.1.2"></script>
-
-  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
-
+  <script src="/js/motion.js?v=7.2.0"></script>
 
 
 
   
-  <script src="/js/scrollspy.js?v=7.1.2"></script>
-<script src="/js/post-details.js?v=7.1.2"></script>
+  
+
+
+  <script src="/js/affix.js?v=7.2.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.2.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
 
 
 
   
 
 
-  <script src="/js/next-boot.js?v=7.1.2"></script>
+  <script src="/js/next-boot.js?v=7.2.0"></script>
 
 
   
 
   
-  <script src="/js/exturl.js?v=7.1.2"></script>
+  <script src="/js/exturl.js?v=7.2.0"></script>
 
 
   

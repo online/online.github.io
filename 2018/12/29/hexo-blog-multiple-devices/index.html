@@ -15,13 +15,11 @@
 
 
 <html class="theme-next gemini use-motion" lang="ru">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-
-
 
 
 
@@ -54,7 +52,7 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
 
-<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
 
 
 
@@ -71,7 +69,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Gemini',
-    version: '7.1.2',
+    version: '7.2.0',
     sidebar: {"position":"left","display":"post","offset":12},
     back2top: true,
     back2top_sidebar: true,
@@ -179,7 +177,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="ru">
+<body itemscope itemtype="http://schema.org/WebPage" lang="ru">
 
   
   
@@ -189,7 +187,7 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta">
     
@@ -232,7 +230,6 @@
 
     
     
-    
       
     
 
@@ -251,7 +248,6 @@
 
     
     
-    
       
     
 
@@ -268,7 +264,6 @@
           
           <li class="menu-item menu-item-archives">
 
-    
     
     
       
@@ -356,20 +351,20 @@
     <div class="reading-progress-bar"></div>
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://inotes.pp.ua/2018/12/29/hexo-blog-multiple-devices/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sergey">
       <meta itemprop="description" content="Делюсь решениями к ситуациям и проблемам, с которыми столкнулся.">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="iNotes">
     </span>
 
@@ -386,13 +381,13 @@
         
 
         <div class="post-meta">
-          <span class="post-time">
 
-            
-            
-            
+          
+          
+          
 
-            
+          
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
@@ -403,33 +398,30 @@
               
 
               <time title="Создано: 29.12.2018 20:00:00" itemprop="dateCreated datePublished" datetime="2018-12-29T20:00:00+02:00">29.12.2018</time>
+            </span>
+          
+
+          
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
                 <time title="Изменено: 30.12.2018 13:44:43" itemprop="dateModified" datetime="2018-12-30T13:44:43+02:00">30.12.2018</time>
-              
+              </span>
             
-          </span>
-
           
 
           
+
+          
             
             
               
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
@@ -447,30 +439,25 @@
 
           
 
+          <br>
           
-            <div class="post-symbolscount">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
               
+              <span title="Кол-во символов в статье">822</span>
+            </span>
+          
 
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
               
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="Кол-во символов в статье">821</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                <span title="Время чтения">1 мин.</span>
-              
-            </div>
+              <span title="Время чтения">1 мин.</span>
+            </span>
           
 
           
@@ -490,6 +477,7 @@
       
         <p>После того как я переустановил и настроил Windows на стационарном ПК, движок Hexo почему-то не хотел полностью выполнять команду <code>hexo g -d</code>, которая отвечает за генерацию содержимого блога и публикацию изменений на GitHub Pages.</p>
 <a id="more"></a>
+
 <p>Решение для данной проблемы оказалось банально простым — нужно было установить официальный клиент <span class="exturl" data-url="aHR0cHM6Ly9kZXNrdG9wLmdpdGh1Yi5jb20v" title="https://desktop.github.com/">GitHub для Windows<i class="fa fa-external-link"></i></span> , после чего я просто повторил вышеуказанную команду и во всплывающем окне у меня попросило логин и пароль от моего GitHub аккаунта.</p>
 <p>Ещё осталось разобраться как быть с ситуацией, когда на одном компьютере необходимо управлять двумя блогами, которые находятся в двух разных GitHub аккаунтах. Пока удалось найти только <span class="exturl" data-url="aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvMzkzMjY0NTIvaGV4by1mb3ItbXVsdGlwbGUtc2l0ZXM=" title="https://stackoverflow.com/questions/39326452/hexo-for-multiple-sites">такой способ<i class="fa fa-external-link"></i></span>, но его не пробовал.</p>
 <p>Если вы читаете данную заметку и владеете ответом на последний вопрос — напишите, пожалуйста, в комментариях своё решение.</p>
@@ -665,7 +653,7 @@
 
       <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Sergey</p>
               <div class="site-description motion-element" itemprop="description">Делюсь решениями к ситуациям и проблемам, с которыми столкнулся.</div>
@@ -797,7 +785,7 @@
 </div>
 
 
-  <div class="powered-by">Генератор — <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.8.0</div>
+  <div class="powered-by">Генератор — <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.9.0</div>
 
 
 
@@ -805,7 +793,7 @@
 
 
 
-  <div class="theme-info">Тема – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.1.2</div>
+  <div class="theme-info">Тема – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.2.0</div>
 
 
 
@@ -898,39 +886,39 @@
   
 
 
-  <script src="/js/utils.js?v=7.1.2"></script>
+  <script src="/js/utils.js?v=7.2.0"></script>
 
-  <script src="/js/motion.js?v=7.1.2"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/affix.js?v=7.1.2"></script>
-
-  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
-
+  <script src="/js/motion.js?v=7.2.0"></script>
 
 
 
   
-  <script src="/js/scrollspy.js?v=7.1.2"></script>
-<script src="/js/post-details.js?v=7.1.2"></script>
+  
+
+
+  <script src="/js/affix.js?v=7.2.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.2.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
 
 
 
   
 
 
-  <script src="/js/next-boot.js?v=7.1.2"></script>
+  <script src="/js/next-boot.js?v=7.2.0"></script>
 
 
   
 
   
-  <script src="/js/exturl.js?v=7.1.2"></script>
+  <script src="/js/exturl.js?v=7.2.0"></script>
 
 
   

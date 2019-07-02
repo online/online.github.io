@@ -15,13 +15,11 @@
 
 
 <html class="theme-next gemini use-motion" lang="ru">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
-
-
 
 
 
@@ -54,7 +52,7 @@
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
 
-<link rel="stylesheet" href="/css/main.css?v=7.1.2">
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
 
 
 
@@ -71,7 +69,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Gemini',
-    version: '7.1.2',
+    version: '7.2.0',
     sidebar: {"position":"left","display":"post","offset":12},
     back2top: true,
     back2top_sidebar: true,
@@ -182,7 +180,7 @@
 
 </head>
 
-<body itemscope="" itemtype="http://schema.org/WebPage" lang="ru">
+<body itemscope itemtype="http://schema.org/WebPage" lang="ru">
 
   
   
@@ -192,7 +190,7 @@
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
   <div class="site-meta">
     
@@ -235,7 +233,6 @@
 
     
     
-    
       
     
 
@@ -254,7 +251,6 @@
 
     
     
-    
       
     
 
@@ -271,7 +267,6 @@
           
           <li class="menu-item menu-item-archives">
 
-    
     
     
       
@@ -359,20 +354,20 @@
     <div class="reading-progress-bar"></div>
   
 
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
   
   
   <div class="post-block">
     <link itemprop="mainEntityOfPage" href="https://inotes.pp.ua/2019/04/22/git-cheat-sheet/">
 
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sergey">
       <meta itemprop="description" content="Делюсь решениями к ситуациям и проблемам, с которыми столкнулся.">
       <meta itemprop="image" content="/images/avatar.gif">
     </span>
 
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="iNotes">
     </span>
 
@@ -389,13 +384,13 @@
         
 
         <div class="post-meta">
-          <span class="post-time">
 
-            
-            
-            
+          
+          
+          
 
-            
+          
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
@@ -406,33 +401,30 @@
               
 
               <time title="Создано: 22.04.2019 01:08:43" itemprop="dateCreated datePublished" datetime="2019-04-22T01:08:43+03:00">22.04.2019</time>
+            </span>
+          
+
+          
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 
                 <time title="Изменено: 05.01.2019 01:39:47" itemprop="dateModified" datetime="2019-01-05T01:39:47+02:00">05.01.2019</time>
-              
+              </span>
             
-          </span>
-
           
 
           
+
+          
             
             
               
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
@@ -450,30 +442,25 @@
 
           
 
+          <br>
           
-            <div class="post-symbolscount">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
               
+              <span title="Кол-во символов в статье">576</span>
+            </span>
+          
 
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
               
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                <span title="Кол-во символов в статье">573</span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                <span title="Время чтения">1 мин.</span>
-              
-            </div>
+              <span title="Время чтения">1 мин.</span>
+            </span>
           
 
           
@@ -493,6 +480,7 @@
       
         <p>В этом материале я буду собирать шпаргалки по использованию Git. Только то, что лично полезно мне. Может быть со временем данная информация окажется в закладках у кого-то из вас.</p>
 <a id="more"></a>
+
 <ul>
 <li><code>git init</code> — создать новый репозиторий;</li>
 <li><code>git add -A</code> — добавить все файлы для отслеживания;</li>
@@ -500,7 +488,9 @@
 </ul>
 <p>Парочка полезных картинок для понимания отличий между некоторыми командами (<span class="exturl" data-url="aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL2EvMjYwMzkwMTQvMzk1MjgyNg==" title="http://stackoverflow.com/a/26039014/3952826">источник<i class="fa fa-external-link"></i></span>):</p>
 <img src="/2019/04/22/git-cheat-sheet/git-cheat-sheet_01.jpg" title="Как было в Git версии 1.x">
+
 <img src="/2019/04/22/git-cheat-sheet/git-cheat-sheet_02.jpg" title="Как сейчас в Git версии 2.x">
+
 <ul>
 <li><code>git add -A</code> эквивалентна команде <code>git add --all</code></li>
 <li><code>git add -u</code> эквивалентна команде <code>git add --update</code></li>
@@ -655,7 +645,7 @@
 
       <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">Sergey</p>
               <div class="site-description motion-element" itemprop="description">Делюсь решениями к ситуациям и проблемам, с которыми столкнулся.</div>
@@ -787,7 +777,7 @@
 </div>
 
 
-  <div class="powered-by">Генератор — <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.8.0</div>
+  <div class="powered-by">Генератор — <span class="exturl theme-link" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> v3.9.0</div>
 
 
 
@@ -795,7 +785,7 @@
 
 
 
-  <div class="theme-info">Тема – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.1.2</div>
+  <div class="theme-info">Тема – <span class="exturl theme-link" data-url="aHR0cHM6Ly90aGVtZS1uZXh0Lm9yZw==">NexT.Gemini</span> v7.2.0</div>
 
 
 
@@ -888,39 +878,39 @@
   
 
 
-  <script src="/js/utils.js?v=7.1.2"></script>
+  <script src="/js/utils.js?v=7.2.0"></script>
 
-  <script src="/js/motion.js?v=7.1.2"></script>
-
-
-
-  
-  
-
-
-  <script src="/js/affix.js?v=7.1.2"></script>
-
-  <script src="/js/schemes/pisces.js?v=7.1.2"></script>
-
+  <script src="/js/motion.js?v=7.2.0"></script>
 
 
 
   
-  <script src="/js/scrollspy.js?v=7.1.2"></script>
-<script src="/js/post-details.js?v=7.1.2"></script>
+  
+
+
+  <script src="/js/affix.js?v=7.2.0"></script>
+
+  <script src="/js/schemes/pisces.js?v=7.2.0"></script>
+
+
+
+
+  
+  <script src="/js/scrollspy.js?v=7.2.0"></script>
+<script src="/js/post-details.js?v=7.2.0"></script>
 
 
 
   
 
 
-  <script src="/js/next-boot.js?v=7.1.2"></script>
+  <script src="/js/next-boot.js?v=7.2.0"></script>
 
 
   
 
   
-  <script src="/js/exturl.js?v=7.1.2"></script>
+  <script src="/js/exturl.js?v=7.2.0"></script>
 
 
   
