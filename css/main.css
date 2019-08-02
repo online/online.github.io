@@ -1743,7 +1743,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #63f49a;
+  background: #912937;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2954,4 +2954,8 @@ ul.breadcrumb li+li:last-child {
   .pagination {
     margin: 8px 0 0;
   }
+}
+/* Фикс отступов для кнопок лайкли */
+.likely {
+  margin: 12px -5px -10px !important;
 }
