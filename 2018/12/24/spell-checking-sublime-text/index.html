@@ -30,7 +30,7 @@
     version: '7.3.0',
     sidebar: {"position":"left","display":"post","offset":12},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
-    copycode: {"enable":true,"show_result":true,"style":null},
+    copycode: {"enable":true,"show_result":true,"style":"default"},
     fancybox: true,
     mediumzoom: false,
     lazyload: false,
@@ -353,13 +353,13 @@
 
 <p>Переходим в папку <code>Users</code> и в ней создаём папку <code>Dictionaries</code>, после чего копируем в новую папку файлы с расширением <code>*.aff</code> и <code>*.dic</code>. Поздравляю, теперь через верхнее меню Саблайма вы можете выбрать наши новые словари (<code>View</code> → <code>Dictionary</code>). После активации словаря всё же рекомендуется перезапустить текстовый редактор.</p>
 <p>Обратите внимание, что после выбора нужного словаря в меню программы в пользовательских настройках Sublime (Preferences → Settings) автоматически появилась новая строка, в случае выбора билингвального русско-английского словаря она будет иметь вид:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">"dictionary"</span>: <span class="string">"Packages/User/Russian-English Bilingual.dic"</span>,</span><br></pre></td></tr></table></figure>
+<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line"><span class="string">"dictionary"</span>: <span class="string">"Packages/User/Russian-English Bilingual.dic"</span>,</span><br></pre></td></tr></table></figure>
 
 <h1 id="Дополнительная-информация"><a href="#Дополнительная-информация" class="headerlink" title="Дополнительная информация"></a>Дополнительная информация</h1><p>Раз уж мы добрались до “внутренностей” редактора, рекомендую прописать ещё такую строчку в конфиге для включения авто проверки орфографии:</p>
 <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">"spell_check":</span> <span class="literal">true</span><span class="string">,</span></span><br></pre></td></tr></table></figure>
 
 <p>Ещё можно добавить строку для корректного отображения файлов в кодировке CP1251:</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="string">"fallback_encoding"</span>: <span class="string">"Cyrillic (Windows 1251)"</span>,</span><br></pre></td></tr></table></figure>
+<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line"><span class="string">"fallback_encoding"</span>: <span class="string">"Cyrillic (Windows 1251)"</span>,</span><br></pre></td></tr></table></figure>
 
 <p>На этом всё. Спасибо, всего хорошего! :)</p>
 
