@@ -18,7 +18,6 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 
 <script id="hexo-configurations">
@@ -32,7 +31,7 @@
     copycode: {"enable":true,"show_result":true,"style":"default"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: true,
+    fancybox: false,
     mediumzoom: false,
     lazyload: false,
     pangu: false,
@@ -55,19 +54,22 @@
   };
 </script>
 
-  <meta name="description" content="В данной заметке буду собирать понравившееся мне афоризмы.">
-<meta name="keywords" content="Android, Windows, Web, Dev">
+  <meta name="description" content="В этом материале я буду собирать шпаргалки по использованию Git. Только то, что лично полезно мне. Может быть со временем данная информация окажется в закладках у кого-то из вас.">
+<meta name="keywords" content="Git">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Афоризмы">
-<meta property="og:url" content="https://inotes.pp.ua/2017/02/24/aforizmy/index.html">
+<meta property="og:title" content="Шпаргалка по использованию Git">
+<meta property="og:url" content="https://inotes.pp.ua/2019/01/05/git-cheat-sheet/index.html">
 <meta property="og:site_name" content="iNotes">
-<meta property="og:description" content="В данной заметке буду собирать понравившееся мне афоризмы.">
+<meta property="og:description" content="В этом материале я буду собирать шпаргалки по использованию Git. Только то, что лично полезно мне. Может быть со временем данная информация окажется в закладках у кого-то из вас.">
 <meta property="og:locale" content="ru">
-<meta property="og:updated_time" content="2017-07-28T23:27:10.000Z">
+<meta property="og:image" content="https://inotes.pp.ua/2019/01/05/git-cheat-sheet/git-cheat-sheet_01.jpg">
+<meta property="og:image" content="https://inotes.pp.ua/2019/01/05/git-cheat-sheet/git-cheat-sheet_02.jpg">
+<meta property="og:updated_time" content="2019-01-13T22:39:28.168Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Афоризмы">
-<meta name="twitter:description" content="В данной заметке буду собирать понравившееся мне афоризмы.">
-  <link rel="canonical" href="https://inotes.pp.ua/2017/02/24/aforizmy/">
+<meta name="twitter:title" content="Шпаргалка по использованию Git">
+<meta name="twitter:description" content="В этом материале я буду собирать шпаргалки по использованию Git. Только то, что лично полезно мне. Может быть со временем данная информация окажется в закладках у кого-то из вас.">
+<meta name="twitter:image" content="https://inotes.pp.ua/2019/01/05/git-cheat-sheet/git-cheat-sheet_01.jpg">
+  <link rel="canonical" href="https://inotes.pp.ua/2019/01/05/git-cheat-sheet/">
 
 
 <script id="page-configurations">
@@ -81,10 +83,10 @@
   };
 </script>
 
-  <title>Афоризмы | iNotes</title>
+  <title>Шпаргалка по использованию Git | iNotes</title>
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90344659-1"></script>
-  <script>
+  <script pjax>
     var host = window.location.hostname;
     if (host !== "localhost" || !true) {
       window.dataLayer = window.dataLayer || [];
@@ -253,7 +255,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="https://inotes.pp.ua/2017/02/24/aforizmy/">
+    <link itemprop="mainEntityOfPage" href="https://inotes.pp.ua/2019/01/05/git-cheat-sheet/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sergey">
@@ -265,7 +267,7 @@
       <meta itemprop="name" content="iNotes">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">Афоризмы
+        <h2 class="post-title" itemprop="name headline">Шпаргалка по использованию Git
 
           
         </h2>
@@ -281,7 +283,7 @@
                 
               
 
-              <time title="Создано: 23.02.2017 23:12:25" itemprop="dateCreated datePublished" datetime="2017-02-23T23:12:25+02:00">23.02.2017</time>
+              <time title="Создано: 05.01.2019 01:34:08" itemprop="dateCreated datePublished" datetime="2019-01-05T01:34:08+02:00">05.01.2019</time>
             </span>
           
             
@@ -292,7 +294,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Изменено</span>
-                <time title="Изменено: 29.07.2017 02:27:10" itemprop="dateModified" datetime="2017-07-29T02:27:10+03:00">29.07.2017</time>
+                <time title="Изменено: 14.01.2019 00:39:28" itemprop="dateModified" datetime="2019-01-14T00:39:28+02:00">14.01.2019</time>
               </span>
             
           
@@ -308,7 +310,7 @@
       
       <span class="post-meta-item-text">Disqus: </span>
     
-    <a title="disqus" href="/2017/02/24/aforizmy/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2017/02/24/aforizmy/" itemprop="commentCount"></span></a>
+    <a title="disqus" href="/2019/01/05/git-cheat-sheet/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/05/git-cheat-sheet/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -318,7 +320,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
               
-              <span>615</span>
+              <span>558</span>
             </span>
           
             <span class="post-meta-item" title="Время чтения">
@@ -339,32 +341,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>В данной заметке буду собирать понравившееся мне афоризмы.</p>
+        <p>В этом материале я буду собирать шпаргалки по использованию Git. Только то, что лично полезно мне. Может быть со временем данная информация окажется в закладках у кого-то из вас.</p>
 <a id="more"></a>
 
-<blockquote>
-<p>В критической ситуации ты не поднимешься до уровня своих ожиданий, а упадёшь до уровня своей подготовки.</p>
-</blockquote>
-<hr>
-<blockquote>
-<p>Стоит человеку выделиться из массы других, как у него появляются враги. Чтобы быть всеобщим любимцем, нужно быть посредственностью.</p>
-</blockquote>
-<p><strong><em>Оскар Уайльд</em></strong></p>
-<hr>
-<blockquote>
-<p>О характере человека можно судить по тому, как он ведёт себя с теми, кто ничем не может быть ему полезен, а также с теми, кто не может дать ему сдачи. </p>
-</blockquote>
-<p><strong><em>Эбигайл Ван Берен</em></strong></p>
-<hr>
-<blockquote>
-<p>Чувства должны перерастать в семью, а не в комок в горле, который мешает жить.</p>
-</blockquote>
-<p><strong><em>Лина Кейчер</em></strong></p>
-<hr>
-<blockquote>
-<p>Много придумано для того, чтобы не думать.</p>
-</blockquote>
-<p><strong><em>Карел Чапек</em></strong></p>
+<ul>
+<li><code>git init</code> — создать новый репозиторий;</li>
+<li><code>git add -A</code> — добавить все файлы для отслеживания;</li>
+<li><code>git commit -m &quot;Добавил все файлы&quot;</code> — зафиксировать внесённые изменения с комментарием.</li>
+</ul>
+<p>Парочка полезных картинок для понимания отличий между некоторыми командами (<span class="exturl" data-url="aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL2EvMjYwMzkwMTQvMzk1MjgyNg==" title="http://stackoverflow.com/a/26039014/3952826">источник<i class="fa fa-external-link"></i></span>):</p>
+<img src="/2019/01/05/git-cheat-sheet/git-cheat-sheet_01.jpg" title="Как было в Git версии 1.x">
+
+<img src="/2019/01/05/git-cheat-sheet/git-cheat-sheet_02.jpg" title="Как сейчас в Git версии 2.x">
+
+<ul>
+<li><code>git add -A</code> эквивалентна команде <code>git add --all</code></li>
+<li><code>git add -u</code> эквивалентна команде <code>git add --update</code></li>
+</ul>
+<p>Продолжение следует…</p>
 
     </div>
 
@@ -377,14 +371,23 @@
       
 
       <footer class="post-footer">
+          
+            
+          
+          <div class="post-tags">
+            
+              <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"></i> Git</a>
+            
+          </div>
+        
 
         
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2017/02/22/hello-hexo/" rel="next" title="Hello, Hexo!">
-                  <i class="fa fa-chevron-left"></i> Hello, Hexo!
+                <a href="/2019/01/03/ubuntu-windows-gpt-uefi/" rel="next" title="Установка Ubuntu рядом с Windows на GPT раздел (UEFI)">
+                  <i class="fa fa-chevron-left"></i> Установка Ubuntu рядом с Windows на GPT раздел (UEFI)
                 </a>
               
             </div>
@@ -393,8 +396,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2017/03/08/ne-rabotaet-internet-ot-intertelekom-na-miui-8-global-developer/" rel="prev" title="Не работает интернет от Интертелеком на MIUI 8 Global Developer (решение проблемы)">
-                  Не работает интернет от Интертелеком на MIUI 8 Global Developer (решение проблемы) <i class="fa fa-chevron-right"></i>
+                <a href="/2019/07/03/kak-otklyuchit-nochnoy-svet-v-windows-10-versiya-1903/" rel="prev" title="Как отключить Ночной свет в Windows 10, версия 1903">
+                  Как отключить Ночной свет в Windows 10, версия 1903 <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -549,12 +552,61 @@
   <script src="/lib/anime.min.js?v=3.1.0"></script>
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
+  <script src="/lib/pjax/pjax.min.js?v=0.2.8"></script>
 <script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
 <script src="/js/schemes/pisces.js?v=7.4.0"></script>
 
 <script src="/js/next-boot.js?v=7.4.0"></script>
+  <script>
+var pjax = new Pjax({
+  selectors: [
+    'head title',
+    '#page-configurations',
+    '.content-wrap',
+    '.post-toc-wrap',
+    '#pjax'
+  ],
+  switches: {
+    '.post-toc-wrap': Pjax.switches.innerHTML
+  },
+  analytics: false,
+  cacheBust: false,
+  scrollTo : !CONFIG.bookmark.enable
+});
+
+window.addEventListener('pjax:success', () => {
+  document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
+    var id = element.id || '';
+    var src = element.src || '';
+    var code = element.text || element.textContent || element.innerHTML || '';
+    var parent = element.parentNode;
+    parent.removeChild(element);
+    var script = document.createElement('script');
+    if (id !=='') {
+      script.id = element.id;
+    }
+    if (src !== '') {
+      script.src = src;
+      // Force synchronous loading of peripheral JS.
+      script.async = false;
+    }
+    if (code !== '') {
+      script.appendChild(document.createTextNode(code));
+    }
+    parent.appendChild(script);
+  });
+  NexT.boot.refresh();
+  // Define Motion Sequence & Bootstrap Motion.
+  if (CONFIG.motion.enable) {
+    NexT.motion.integrator
+      .init()
+      .add(NexT.motion.middleWares.postList)
+      .bootstrap();
+  }
+  NexT.utils.updateSidebarPosition();
+});
+</script>
+
 
 
 
@@ -581,6 +633,7 @@
 
 
 
+    <div id="pjax">
 
   
 
@@ -600,9 +653,9 @@
 </script>
 <script>
   function disqus_config() {
-    this.page.url = "https://inotes.pp.ua/2017/02/24/aforizmy/";
-    this.page.identifier = "2017/02/24/aforizmy/";
-    this.page.title = 'Афоризмы';};
+    this.page.url = "https://inotes.pp.ua/2019/01/05/git-cheat-sheet/";
+    this.page.identifier = "2019/01/05/git-cheat-sheet/";
+    this.page.title = 'Шпаргалка по использованию Git';};
   function loadComments() {
     if (window.DISQUS) {
       DISQUS.reset({
@@ -639,5 +692,6 @@
   
 </script>
 
+    </div>
 </body>
 </html>
