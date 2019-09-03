@@ -32,6 +32,7 @@
     </summary>
     
     
+    
       <category term="Windows" scheme="https://inotes.pp.ua/tags/Windows/"/>
     
   </entry>
@@ -50,6 +51,7 @@
       &lt;p&gt;В этом материале я буду собирать шпаргалки по использованию Git. Только то, что лично полезно мне. Может быть со временем данная информация окажется в закладках у кого-то из вас.&lt;/p&gt;
     
     </summary>
+    
     
     
       <category term="Git" scheme="https://inotes.pp.ua/tags/Git/"/>
@@ -72,9 +74,10 @@
     </summary>
     
     
-      <category term="Ubuntu" scheme="https://inotes.pp.ua/tags/Ubuntu/"/>
     
       <category term="Windows" scheme="https://inotes.pp.ua/tags/Windows/"/>
+    
+      <category term="Ubuntu" scheme="https://inotes.pp.ua/tags/Ubuntu/"/>
     
   </entry>
   
@@ -92,6 +95,7 @@
       &lt;p&gt;После того как я переустановил и настроил Windows на стационарном ПК, движок Hexo почему-то не хотел полностью выполнять команду &lt;code&gt;hexo g -d&lt;/code&gt;, которая отвечает за генерацию содержимого блога и публикацию изменений на GitHub Pages.&lt;/p&gt;
     
     </summary>
+    
     
     
       <category term="Hexo" scheme="https://inotes.pp.ua/tags/Hexo/"/>
@@ -114,6 +118,7 @@
     </summary>
     
     
+    
       <category term="Sublime Text" scheme="https://inotes.pp.ua/tags/Sublime-Text/"/>
     
   </entry>
@@ -125,13 +130,14 @@
     <published>2018-12-19T22:41:40.000Z</published>
     <updated>2018-12-23T21:27:27.000Z</updated>
     
-    <content type="html"><![CDATA[<p>После установки Sublime Text в Windows 10 я обнаружил, что при вызове контекстного меню в пункте “Open With Sublime Text” отсутствует иконка этого редактора, но, к счастью, это легко исправить, выполнив несколько несложных операций.</p><a id="more"></a><p>С помощью комбинации клавиш <kbd>Win</kbd> + <kbd>R</kbd> вызовите меню “<em>Выполнить</em>” и введите в нём <code>regedit</code> для запуска редактора реестра. В редакторе перейдите по пути:</p><figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line">HKEY_CLASSES_ROOT<span class="symbol">\*</span><span class="symbol">\s</span>hell<span class="symbol">\O</span>pen with Sublime Text</span><br></pre></td></tr></table></figure><p>В этой ветке реестра необходимо нажать <em>Создать</em> → <em>Строковый параметр</em> и в поле <em>Имя</em> укажите значение <code>Icon</code>, а в поле <em>Значение</em> укажите путь к exe-файлу, как показано ниже (кавычки обязательны):</p><figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line">"C:<span class="symbol">\P</span>rogram Files<span class="symbol">\S</span>ublime Text 3<span class="symbol">\s</span>ublime_text.exe"</span><br></pre></td></tr></table></figure><img src="/2018/12/20/sublime-text-icon-windows/Sublime-Text-regedit.png" title="Вот как это выглядит на скриншоте"><p>Если вы всё сделали правильно, то в контекстном меню пункт “Open With Sublime Text” будет выглядеть так:</p><img src="/2018/12/20/sublime-text-icon-windows/Context-menu-Sublime-Text.png" title="Вот как это выглядит на скриншоте"><p>Аналогичным образом можно добавить иконку для любой другой программы.</p>]]></content>
+    <content type="html"><![CDATA[<p>После установки Sublime Text в Windows 10 я обнаружил, что при вызове контекстного меню в пункте “Open With Sublime Text” отсутствует иконка этого редактора, но, к счастью, это легко исправить, выполнив несколько несложных операций.</p><a id="more"></a><p>С помощью комбинации клавиш <kbd>Win</kbd> + <kbd>R</kbd> вызовите меню “<em>Выполнить</em>” и введите в нём <code>regedit</code> для запуска редактора реестра. В редакторе перейдите по пути:</p><figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">HKEY_CLASSES_ROOT\*\shell\<span class="keyword">Open</span> <span class="keyword">with</span> Sublime <span class="type">Text</span></span><br></pre></td></tr></table></figure><p>В этой ветке реестра необходимо нажать <em>Создать</em> → <em>Строковый параметр</em> и в поле <em>Имя</em> укажите значение <code>Icon</code>, а в поле <em>Значение</em> укажите путь к exe-файлу, как показано ниже (кавычки обязательны):</p><figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line">"C:<span class="symbol">\P</span>rogram Files<span class="symbol">\S</span>ublime Text 3<span class="symbol">\s</span>ublime_text.exe"</span><br></pre></td></tr></table></figure><img src="/2018/12/20/sublime-text-icon-windows/Sublime-Text-regedit.png" title="Вот как это выглядит на скриншоте"><p>Если вы всё сделали правильно, то в контекстном меню пункт “Open With Sublime Text” будет выглядеть так:</p><img src="/2018/12/20/sublime-text-icon-windows/Context-menu-Sublime-Text.png" title="Вот как это выглядит на скриншоте"><p>Аналогичным образом можно добавить иконку для любой другой программы.</p>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;После установки Sublime Text в Windows 10 я обнаружил, что при вызове контекстного меню в пункте “Open With Sublime Text” отсутствует иконка этого редактора, но, к счастью, это легко исправить, выполнив несколько несложных операций.&lt;/p&gt;
     
     </summary>
+    
     
     
       <category term="Sublime Text" scheme="https://inotes.pp.ua/tags/Sublime-Text/"/>
@@ -154,6 +160,7 @@
     </summary>
     
     
+    
       <category term="Hexo" scheme="https://inotes.pp.ua/tags/Hexo/"/>
     
   </entry>
@@ -172,6 +179,7 @@
       &lt;p&gt;В этой заметке будут собраны различные украшательства, которые существуют в используемой мной теме оформления.&lt;/p&gt;
     
     </summary>
+    
     
     
       <category term="test" scheme="https://inotes.pp.ua/tags/test/"/>
@@ -194,6 +202,7 @@
     </summary>
     
     
+    
       <category term="Windows" scheme="https://inotes.pp.ua/tags/Windows/"/>
     
   </entry>
@@ -212,6 +221,7 @@
       &lt;p&gt;На моём смартфоне Redmi 3S Prime установлено две сим-карты: Киевстар (в качестве основной) и Интертелеком (для тех случаев, когда нужен более-менее нормальный интернет за вменяемые деньги). После покупки смартфона я длительное время оставался на стабильной глобальной прошивке, но потом стало интересно попробовать новые плюшки MIUI и я перешёл на девелоперскую глобальную прошивку.&lt;/p&gt;
     
     </summary>
+    
     
     
       <category term="Android" scheme="https://inotes.pp.ua/tags/Android/"/>
@@ -236,6 +246,7 @@
     </summary>
     
     
+    
   </entry>
   
   <entry>
@@ -255,6 +266,7 @@
       
     
     </summary>
+    
     
     
       <category term="Hexo" scheme="https://inotes.pp.ua/tags/Hexo/"/>
@@ -278,6 +290,7 @@
     </summary>
     
     
+    
       <category term="Telegram" scheme="https://inotes.pp.ua/tags/Telegram/"/>
     
   </entry>
@@ -298,6 +311,7 @@
     </summary>
     
     
+    
       <category term="Ubuntu" scheme="https://inotes.pp.ua/tags/Ubuntu/"/>
     
   </entry>
@@ -309,13 +323,14 @@
     <published>2017-01-27T13:00:00.000Z</published>
     <updated>2018-12-19T22:34:22.000Z</updated>
     
-    <content type="html"><![CDATA[<p>В данной статье речь пойдёт о настройке клавиатуры <span class="exturl" data-url="aHR0cDovL3d3dy5sb2dpdGVjaC5jb20vcnUtcnUvcHJvZHVjdC9jb21mb3J0LWtleWJvYXJkLWsyOTA=" title="http://www.logitech.com/ru-ru/product/comfort-keyboard-k290">Logitech Comfort Keyboard K290<i class="fa fa-external-link"></i></span> под ОС Ubuntu 15.04 / 15.10. Проблема этой клавиатуры в том, что по умолчанию клавиши <kbd>F5</kbd> (используется, например, для обновления веб-страниц в браузерах) и т. д. не выполняют привычные функции. Каждый раз при необходимости обновить страницу в браузере, мне приходится сначала зажимать клавишу <kbd>FN</kbd>, и только потом я могу нажать на <kbd>F5</kbd>. Для ОС Windows производитель удосужился написать специальный софт, отвечающий за переназначение клавиш на правильную работу, но как быть пользователям ОС Ubuntu и других Linux-подобных систем?</p><a id="more"></a><h1 id="Решение-проблемы"><a href="#Решение-проблемы" class="headerlink" title="Решение проблемы"></a>Решение проблемы</h1><p>Для начала установим Git, если не установили его ранее:</p><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> install git</span><br></pre></td></tr></table></figure><p>Переходим на страницу репозитория <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21pbGduZXIvazI5MC1mbmtleWN0bA==" title="https://github.com/milgner/k290-fnkeyctl">k290-fnkeyctl<i class="fa fa-external-link"></i></span> и копируем ссылку для локального клонирования, полная команда будет выглядеть так:</p><figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">https</span>://github.com/milgner/k290-fnkeyctl.git</span><br></pre></td></tr></table></figure><p>Установим ещё один нужный пакет:</p><figure class="highlight lsl"><table><tr><td class="code"><pre><span class="line">sudo apt-get install libusb<span class="number">-1.0</span><span class="number">-0</span>-dev</span><br></pre></td></tr></table></figure><p>Переходим в папку с содержимым репозитория:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> k290-fnkeyctl</span><br></pre></td></tr></table></figure><p>Запускаем специальный скрипт с помощью команды <code>./build.sh</code>. Если после его запуска клавиши не заработали, то выполните другой скрипт из той же папки — <code>sudo ./k290_fnkeyctl</code> (у меня всё заработало после этой команды).</p><p><strong>UPD 11.06.2015</strong>: если после перезагрузки системы настройки слетают — проделайте нижеуказанные шаги.</p><p>Перейдите в папку, куда скачали патч:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> k290-fnkeyctl</span><br></pre></td></tr></table></figure><p>Выполните скрипт, отвечающий за автоматический запуск правил:</p><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">sudo ./<span class="keyword">install</span>.sh</span><br></pre></td></tr></table></figure><p>Проверено под Ubuntu 15.04 / 15.10 (64 bit).</p>]]></content>
+    <content type="html"><![CDATA[<p>В данной статье речь пойдёт о настройке клавиатуры <span class="exturl" data-url="aHR0cDovL3d3dy5sb2dpdGVjaC5jb20vcnUtcnUvcHJvZHVjdC9jb21mb3J0LWtleWJvYXJkLWsyOTA=" title="http://www.logitech.com/ru-ru/product/comfort-keyboard-k290">Logitech Comfort Keyboard K290<i class="fa fa-external-link"></i></span> под ОС Ubuntu 15.04 / 15.10. Проблема этой клавиатуры в том, что по умолчанию клавиши <kbd>F5</kbd> (используется, например, для обновления веб-страниц в браузерах) и т. д. не выполняют привычные функции. Каждый раз при необходимости обновить страницу в браузере, мне приходится сначала зажимать клавишу <kbd>FN</kbd>, и только потом я могу нажать на <kbd>F5</kbd>. Для ОС Windows производитель удосужился написать специальный софт, отвечающий за переназначение клавиш на правильную работу, но как быть пользователям ОС Ubuntu и других Linux-подобных систем?</p><a id="more"></a><h1 id="Решение-проблемы"><a href="#Решение-проблемы" class="headerlink" title="Решение проблемы"></a>Решение проблемы</h1><p>Для начала установим Git, если не установили его ранее:</p><figure class="highlight routeros"><table><tr><td class="code"><pre><span class="line">sudo apt-<span class="builtin-name">get</span> install git</span><br></pre></td></tr></table></figure><p>Переходим на страницу репозитория <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21pbGduZXIvazI5MC1mbmtleWN0bA==" title="https://github.com/milgner/k290-fnkeyctl">k290-fnkeyctl<i class="fa fa-external-link"></i></span> и копируем ссылку для локального клонирования, полная команда будет выглядеть так:</p><figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">git <span class="keyword">clone</span> <span class="title">https</span>://github.com/milgner/k290-fnkeyctl.git</span><br></pre></td></tr></table></figure><p>Установим ещё один нужный пакет:</p><figure class="highlight angelscript"><table><tr><td class="code"><pre><span class="line">sudo apt-<span class="keyword">get</span> install libusb<span class="number">-1.0</span><span class="number">-0</span>-dev</span><br></pre></td></tr></table></figure><p>Переходим в папку с содержимым репозитория:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> k290-fnkeyctl</span><br></pre></td></tr></table></figure><p>Запускаем специальный скрипт с помощью команды <code>./build.sh</code>. Если после его запуска клавиши не заработали, то выполните другой скрипт из той же папки — <code>sudo ./k290_fnkeyctl</code> (у меня всё заработало после этой команды).</p><p><strong>UPD 11.06.2015</strong>: если после перезагрузки системы настройки слетают — проделайте нижеуказанные шаги.</p><p>Перейдите в папку, куда скачали патч:</p><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> k290-fnkeyctl</span><br></pre></td></tr></table></figure><p>Выполните скрипт, отвечающий за автоматический запуск правил:</p><figure class="highlight cmake"><table><tr><td class="code"><pre><span class="line">sudo ./<span class="keyword">install</span>.sh</span><br></pre></td></tr></table></figure><p>Проверено под Ubuntu 15.04 / 15.10 (64 bit).</p>]]></content>
     
     <summary type="html">
     
       &lt;p&gt;В данной статье речь пойдёт о настройке клавиатуры &lt;a href=&quot;http://www.logitech.com/ru-ru/product/comfort-keyboard-k290&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Logitech Comfort Keyboard K290&lt;/a&gt; под ОС Ubuntu 15.04 / 15.10. Проблема этой клавиатуры в том, что по умолчанию клавиши &lt;kbd&gt;F5&lt;/kbd&gt; (используется, например, для обновления веб-страниц в браузерах) и т. д. не выполняют привычные функции. Каждый раз при необходимости обновить страницу в браузере, мне приходится сначала зажимать клавишу &lt;kbd&gt;FN&lt;/kbd&gt;, и только потом я могу нажать на &lt;kbd&gt;F5&lt;/kbd&gt;. Для ОС Windows производитель удосужился написать специальный софт, отвечающий за переназначение клавиш на правильную работу, но как быть пользователям ОС Ubuntu и других Linux-подобных систем?&lt;/p&gt;
     
     </summary>
+    
     
     
       <category term="Ubuntu" scheme="https://inotes.pp.ua/tags/Ubuntu/"/>
