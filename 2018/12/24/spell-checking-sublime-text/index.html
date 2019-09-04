@@ -18,7 +18,6 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 
 <script id="hexo-configurations">
@@ -28,11 +27,11 @@
     scheme: 'Gemini',
     version: '7.4.0',
     exturl: true,
-    sidebar: {"position":"left","display":"post","offset":12},
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":"default"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: true,
+    fancybox: false,
     mediumzoom: false,
     lazyload: false,
     pangu: false,
@@ -55,22 +54,19 @@
   };
 </script>
 
-  <meta name="description" content="В этом материале я буду собирать шпаргалки по использованию Git. Только то, что лично полезно мне. Может быть со временем данная информация окажется в закладках у кого-то из вас.">
-<meta name="keywords" content="Git">
+  <meta name="description" content="В Sublime Text по умолчанию есть проверка орфографии для английского языка, но, к сожалению, отсутствует для русского. В этом материале я поделюсь информацией о том, как исправить эту несправедливость">
+<meta name="keywords" content="Sublime Text">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Шпаргалка по использованию Git">
-<meta property="og:url" content="https://inotes.pp.ua/2019/01/05/git-cheat-sheet/index.html">
+<meta property="og:title" content="Проверка орфографии в Sublime Text 2&#x2F;3">
+<meta property="og:url" content="https://inotes.pp.ua/2018/12/24/spell-checking-sublime-text/index.html">
 <meta property="og:site_name" content="iNotes">
-<meta property="og:description" content="В этом материале я буду собирать шпаргалки по использованию Git. Только то, что лично полезно мне. Может быть со временем данная информация окажется в закладках у кого-то из вас.">
+<meta property="og:description" content="В Sublime Text по умолчанию есть проверка орфографии для английского языка, но, к сожалению, отсутствует для русского. В этом материале я поделюсь информацией о том, как исправить эту несправедливость">
 <meta property="og:locale" content="ru">
-<meta property="og:image" content="https://inotes.pp.ua/2019/01/05/git-cheat-sheet/git-cheat-sheet_01.jpg">
-<meta property="og:image" content="https://inotes.pp.ua/2019/01/05/git-cheat-sheet/git-cheat-sheet_02.jpg">
-<meta property="og:updated_time" content="2019-01-13T22:39:28.168Z">
+<meta property="og:updated_time" content="2018-12-26T21:12:44.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Шпаргалка по использованию Git">
-<meta name="twitter:description" content="В этом материале я буду собирать шпаргалки по использованию Git. Только то, что лично полезно мне. Может быть со временем данная информация окажется в закладках у кого-то из вас.">
-<meta name="twitter:image" content="https://inotes.pp.ua/2019/01/05/git-cheat-sheet/git-cheat-sheet_01.jpg">
-  <link rel="canonical" href="https://inotes.pp.ua/2019/01/05/git-cheat-sheet/">
+<meta name="twitter:title" content="Проверка орфографии в Sublime Text 2&#x2F;3">
+<meta name="twitter:description" content="В Sublime Text по умолчанию есть проверка орфографии для английского языка, но, к сожалению, отсутствует для русского. В этом материале я поделюсь информацией о том, как исправить эту несправедливость">
+  <link rel="canonical" href="https://inotes.pp.ua/2018/12/24/spell-checking-sublime-text/">
 
 
 <script id="page-configurations">
@@ -84,10 +80,10 @@
   };
 </script>
 
-  <title>Шпаргалка по использованию Git | iNotes</title>
+  <title>Проверка орфографии в Sublime Text 2/3 | iNotes</title>
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90344659-1"></script>
-  <script pjax>
+  <script>
     var host = window.location.hostname;
     if (host !== "localhost" || !true) {
       window.dataLayer = window.dataLayer || [];
@@ -256,7 +252,7 @@
   
   
   <div class="post-block post">
-    <link itemprop="mainEntityOfPage" href="https://inotes.pp.ua/2019/01/05/git-cheat-sheet/">
+    <link itemprop="mainEntityOfPage" href="https://inotes.pp.ua/2018/12/24/spell-checking-sublime-text/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Sergey">
@@ -268,7 +264,7 @@
       <meta itemprop="name" content="iNotes">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">Шпаргалка по использованию Git
+        <h2 class="post-title" itemprop="name headline">Проверка орфографии в Sublime Text 2/3
 
           
         </h2>
@@ -284,7 +280,7 @@
                 
               
 
-              <time title="Создано: 05.01.2019 01:34:08" itemprop="dateCreated datePublished" datetime="2019-01-05T01:34:08+02:00">05.01.2019</time>
+              <time title="Создано: 23.12.2018 23:13:14" itemprop="dateCreated datePublished" datetime="2018-12-23T23:13:14+02:00">23.12.2018</time>
             </span>
           
             
@@ -295,7 +291,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">Изменено</span>
-                <time title="Изменено: 14.01.2019 00:39:28" itemprop="dateModified" datetime="2019-01-14T00:39:28+02:00">14.01.2019</time>
+                <time title="Изменено: 26.12.2018 23:12:44" itemprop="dateModified" datetime="2018-12-26T23:12:44+02:00">26.12.2018</time>
               </span>
             
           
@@ -311,7 +307,7 @@
       
       <span class="post-meta-item-text">Disqus: </span>
     
-    <a title="disqus" href="/2019/01/05/git-cheat-sheet/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2019/01/05/git-cheat-sheet/" itemprop="commentCount"></span></a>
+    <a title="disqus" href="/2018/12/24/spell-checking-sublime-text/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2018/12/24/spell-checking-sublime-text/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -321,7 +317,7 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
               
-              <span>558</span>
+              <span>2.5k</span>
             </span>
           
             <span class="post-meta-item" title="Время чтения">
@@ -342,24 +338,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>В этом материале я буду собирать шпаргалки по использованию Git. Только то, что лично полезно мне. Может быть со временем данная информация окажется в закладках у кого-то из вас.</p>
+        <p>В Sublime Text по умолчанию есть проверка орфографии для английского языка, но, к сожалению, отсутствует для русского. В этом материале я поделюсь информацией о том, как исправить эту несправедливость.</p>
 <a id="more"></a>
 
-<ul>
-<li><code>git init</code> — создать новый репозиторий;</li>
-<li><code>git add -A</code> — добавить все файлы для отслеживания;</li>
-<li><code>git commit -m &quot;Добавил все файлы&quot;</code> — зафиксировать внесённые изменения с комментарием.</li>
-</ul>
-<p>Парочка полезных картинок для понимания отличий между некоторыми командами (<span class="exturl" data-url="aHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL2EvMjYwMzkwMTQvMzk1MjgyNg==" title="http://stackoverflow.com/a/26039014/3952826">источник<i class="fa fa-external-link"></i></span>):</p>
-<img src="/2019/01/05/git-cheat-sheet/git-cheat-sheet_01.jpg" title="Как было в Git версии 1.x">
+<p>По сути, в данной заметке будет более детальная информация из <span class="exturl" data-url="aHR0cHM6Ly93d3cuc3VibGltZXRleHQuY29tL2RvY3MvMy9zcGVsbF9jaGVja2luZy5odG1s" title="https://www.sublimetext.com/docs/3/spell_checking.html">официальной справки<i class="fa fa-external-link"></i></span> на сайте Саблайма.</p>
+<p>Официальная документация Sublime <span class="exturl" data-url="aHR0cDovL3d3dy5zdWJsaW1ldGV4dC5jb20vZG9jcy8zL3NwZWxsX2NoZWNraW5nLmh0bWw=" title="http://www.sublimetext.com/docs/3/spell_checking.html">вещает<i class="fa fa-external-link"></i></span>, что этот редактор использует <span class="exturl" data-url="aHR0cDovL2h1bnNwZWxsLnNvdXJjZWZvcmdlLm5ldC8=" title="http://hunspell.sourceforge.net/">Hunspell<i class="fa fa-external-link"></i></span> для проверки орфографии. Также приводится ссылка на <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3RpdG9Cb3V6b3V0L0RpY3Rpb25hcmllcw==" title="https://github.com/titoBouzout/Dictionaries">репозиторий<i class="fa fa-external-link"></i></span> с уже готовыми к использованию словарями (под <em>готовыми</em> подразумевается, что все словари должны быть в кодировке UTF-8, иначе работать не будут). Каждый словарь представляет собой три файла, однако txt скачивать не обязательно. То есть, к примеру, если вам нужна проверка украинской орфографии, то достаточно скачать файлы <code>Ukrainian_uk_UA.aff</code> и <code>Ukrainian_uk_UA.dic</code>.</p>
+<p>Для проверки русскоязычной орфографии я рекомендую скачать билингвальный русско-английский словарь, то есть файлы <code>Russian-English Bilingual.aff</code> и <code>Russian-English Bilingual.dic</code>. Билингвальный словарь позволит вам проверять орфографию одновременно двух языков (русского и английского в нашем случае), то есть слова второго языка не будут подсвечиваться как ошибочные красной линией, как это обычно бывает при использовании одноязычных словарей.</p>
+<h1 id="Подключаем-словари"><a href="#Подключаем-словари" class="headerlink" title="Подключаем словари"></a>Подключаем словари</h1><p>После того как вы скачали два файла <code>*.aff</code> и <code>*.dic</code>, необходимо в Саблайме открыть папку профиля (<code>Preferences</code> → <code>Browse Packages…</code>). У меня путь выглядит таким:</p>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line">C:<span class="symbol">\U</span>sers<span class="symbol">\&lt;</span>Имя_вашего_пользователя&gt;<span class="symbol">\A</span>ppData<span class="symbol">\R</span>oaming<span class="symbol">\S</span>ublime Text 3<span class="symbol">\P</span>ackages</span><br></pre></td></tr></table></figure>
 
-<img src="/2019/01/05/git-cheat-sheet/git-cheat-sheet_02.jpg" title="Как сейчас в Git версии 2.x">
+<p>Переходим в папку <code>Users</code> и в ней создаём папку <code>Dictionaries</code>, после чего копируем в новую папку файлы с расширением <code>*.aff</code> и <code>*.dic</code>. Поздравляю, теперь через верхнее меню Саблайма вы можете выбрать наши новые словари (<code>View</code> → <code>Dictionary</code>). После активации словаря всё же рекомендуется перезапустить текстовый редактор.</p>
+<p>Обратите внимание, что после выбора нужного словаря в меню программы в пользовательских настройках Sublime (Preferences → Settings) автоматически появилась новая строка, в случае выбора билингвального русско-английского словаря она будет иметь вид:</p>
+<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line"><span class="string">"dictionary"</span>: <span class="string">"Packages/User/Russian-English Bilingual.dic"</span>,</span><br></pre></td></tr></table></figure>
 
-<ul>
-<li><code>git add -A</code> эквивалентна команде <code>git add --all</code></li>
-<li><code>git add -u</code> эквивалентна команде <code>git add --update</code></li>
-</ul>
-<p>Продолжение следует…</p>
+<h1 id="Дополнительная-информация"><a href="#Дополнительная-информация" class="headerlink" title="Дополнительная информация"></a>Дополнительная информация</h1><p>Раз уж мы добрались до “внутренностей” редактора, рекомендую прописать ещё такую строчку в конфиге для включения авто проверки орфографии:</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">"spell_check":</span> <span class="literal">true</span><span class="string">,</span></span><br></pre></td></tr></table></figure>
+
+<p>Ещё можно добавить строку для корректного отображения файлов в кодировке CP1251:</p>
+<figure class="highlight 1c"><table><tr><td class="code"><pre><span class="line"><span class="string">"fallback_encoding"</span>: <span class="string">"Cyrillic (Windows 1251)"</span>,</span><br></pre></td></tr></table></figure>
+
+<p>На этом всё. Спасибо, всего хорошего! :)</p>
 
     </div>
 
@@ -367,6 +365,16 @@
     
     
       
+  <div class="popular-posts-header">Похожие записи</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="\2018\12\20\sublime-text-icon-windows\" rel="bookmark">Как добавить иконку Sublime Text в контекстное меню проводника Windows?</a></div>
+      
+    </li>
+  
+  </ul>
 
         
       
@@ -377,7 +385,7 @@
           
           <div class="post-tags">
             
-              <a href="/tags/Git/" rel="tag"><i class="fa fa-tag"></i> Git</a>
+              <a href="/tags/Sublime-Text/" rel="tag"><i class="fa fa-tag"></i> Sublime Text</a>
             
           </div>
         
@@ -387,8 +395,8 @@
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
               
-                <a href="/2019/01/03/ubuntu-windows-gpt-uefi/" rel="next" title="Установка Ubuntu рядом с Windows на GPT раздел (UEFI)">
-                  <i class="fa fa-chevron-left"></i> Установка Ubuntu рядом с Windows на GPT раздел (UEFI)
+                <a href="/2018/12/20/sublime-text-icon-windows/" rel="next" title="Как добавить иконку Sublime Text в контекстное меню проводника Windows?">
+                  <i class="fa fa-chevron-left"></i> Как добавить иконку Sublime Text в контекстное меню проводника Windows?
                 </a>
               
             </div>
@@ -397,8 +405,8 @@
 
             <div class="post-nav-prev post-nav-item">
               
-                <a href="/2019/07/03/kak-otklyuchit-nochnoy-svet-v-windows-10-versiya-1903/" rel="prev" title="Как отключить Ночной свет в Windows 10, версия 1903">
-                  Как отключить Ночной свет в Windows 10, версия 1903 <i class="fa fa-chevron-right"></i>
+                <a href="/2018/12/29/hexo-blog-multiple-devices/" rel="prev" title="Управляем Hexo блогом на нескольких устройствах">
+                  Управляем Hexo блогом на нескольких устройствах <i class="fa fa-chevron-right"></i>
                 </a>
               
             </div>
@@ -457,6 +465,8 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Подключаем-словари"><span class="nav-number">1.</span> <span class="nav-text">Подключаем словари</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Дополнительная-информация"><span class="nav-number">2.</span> <span class="nav-text">Дополнительная информация</span></a></li></ol></div>
+        
       </div>
       <!--/noindex-->
 
@@ -553,63 +563,10 @@
   <script src="/lib/anime.min.js?v=3.1.0"></script>
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  <script src="/lib/pjax/pjax.min.js?v=0.2.8"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
 <script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
 <script src="/js/schemes/pisces.js?v=7.4.0"></script>
 
 <script src="/js/next-boot.js?v=7.4.0"></script>
-  <script>
-var pjax = new Pjax({
-  selectors: [
-    'head title',
-    '#page-configurations',
-    '.content-wrap',
-    '.post-toc-wrap',
-    '#pjax'
-  ],
-  switches: {
-    '.post-toc-wrap': Pjax.switches.innerHTML
-  },
-  analytics: false,
-  cacheBust: false,
-  scrollTo : !CONFIG.bookmark.enable
-});
-
-window.addEventListener('pjax:success', () => {
-  document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
-    var id = element.id || '';
-    var src = element.src || '';
-    var code = element.text || element.textContent || element.innerHTML || '';
-    var parent = element.parentNode;
-    parent.removeChild(element);
-    var script = document.createElement('script');
-    if (id !=='') {
-      script.id = element.id;
-    }
-    if (src !== '') {
-      script.src = src;
-      // Force synchronous loading of peripheral JS.
-      script.async = false;
-    }
-    if (code !== '') {
-      script.appendChild(document.createTextNode(code));
-    }
-    parent.appendChild(script);
-  });
-  NexT.boot.refresh();
-  // Define Motion Sequence & Bootstrap Motion.
-  if (CONFIG.motion.enable) {
-    NexT.motion.integrator
-      .init()
-      .add(NexT.motion.middleWares.postList)
-      .bootstrap();
-  }
-  NexT.utils.updateSidebarPosition();
-});
-</script>
-
 
 
 
@@ -636,7 +593,6 @@ window.addEventListener('pjax:success', () => {
 
 
 
-    <div id="pjax">
 
   
 
@@ -656,9 +612,9 @@ window.addEventListener('pjax:success', () => {
 </script>
 <script>
   function disqus_config() {
-    this.page.url = "https://inotes.pp.ua/2019/01/05/git-cheat-sheet/";
-    this.page.identifier = "2019/01/05/git-cheat-sheet/";
-    this.page.title = 'Шпаргалка по использованию Git';};
+    this.page.url = "https://inotes.pp.ua/2018/12/24/spell-checking-sublime-text/";
+    this.page.identifier = "2018/12/24/spell-checking-sublime-text/";
+    this.page.title = 'Проверка орфографии в Sublime Text 2/3';};
   function loadComments() {
     if (window.DISQUS) {
       DISQUS.reset({
@@ -695,6 +651,5 @@ window.addEventListener('pjax:success', () => {
   
 </script>
 
-    </div>
 </body>
 </html>

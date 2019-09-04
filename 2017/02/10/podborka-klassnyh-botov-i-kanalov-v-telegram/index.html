@@ -18,7 +18,6 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.css">
 
 
 <script id="hexo-configurations">
@@ -28,11 +27,11 @@
     scheme: 'Gemini',
     version: '7.4.0',
     exturl: true,
-    sidebar: {"position":"left","display":"post","offset":12},
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
     copycode: {"enable":true,"show_result":true,"style":"default"},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     bookmark: {"enable":false,"color":"#222","save":"auto"},
-    fancybox: true,
+    fancybox: false,
     mediumzoom: false,
     lazyload: false,
     pangu: false,
@@ -63,7 +62,7 @@
 <meta property="og:site_name" content="iNotes">
 <meta property="og:description" content="Список интересных групп, каналов и ботов в Телеграме (пополняется). Если у вас есть интересные каналы, группы, чаты или боты, пожалуйста, делитесь в комментариях к данной заметке. С удовольствием внес">
 <meta property="og:locale" content="ru">
-<meta property="og:updated_time" content="2019-01-02T22:53:52.712Z">
+<meta property="og:updated_time" content="2019-01-02T22:53:52.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Подборка классных ботов и каналов в Telegram">
 <meta name="twitter:description" content="Список интересных групп, каналов и ботов в Телеграме (пополняется). Если у вас есть интересные каналы, группы, чаты или боты, пожалуйста, делитесь в комментариях к данной заметке. С удовольствием внес">
@@ -84,7 +83,7 @@
   <title>Подборка классных ботов и каналов в Telegram | iNotes</title>
   
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90344659-1"></script>
-  <script pjax>
+  <script>
     var host = window.location.hostname;
     if (host !== "localhost" || !true) {
       window.dataLayer = window.dataLayer || [];
@@ -562,63 +561,10 @@
   <script src="/lib/anime.min.js?v=3.1.0"></script>
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  <script src="/lib/pjax/pjax.min.js?v=0.2.8"></script>
-  <script src="//cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
-  <script src="//cdn.jsdelivr.net/gh/fancyapps/fancybox@3/dist/jquery.fancybox.min.js"></script>
 <script src="/js/utils.js?v=7.4.0"></script><script src="/js/motion.js?v=7.4.0"></script>
 <script src="/js/schemes/pisces.js?v=7.4.0"></script>
 
 <script src="/js/next-boot.js?v=7.4.0"></script>
-  <script>
-var pjax = new Pjax({
-  selectors: [
-    'head title',
-    '#page-configurations',
-    '.content-wrap',
-    '.post-toc-wrap',
-    '#pjax'
-  ],
-  switches: {
-    '.post-toc-wrap': Pjax.switches.innerHTML
-  },
-  analytics: false,
-  cacheBust: false,
-  scrollTo : !CONFIG.bookmark.enable
-});
-
-window.addEventListener('pjax:success', () => {
-  document.querySelectorAll('script[pjax], script#page-configurations, #pjax script').forEach(element => {
-    var id = element.id || '';
-    var src = element.src || '';
-    var code = element.text || element.textContent || element.innerHTML || '';
-    var parent = element.parentNode;
-    parent.removeChild(element);
-    var script = document.createElement('script');
-    if (id !=='') {
-      script.id = element.id;
-    }
-    if (src !== '') {
-      script.src = src;
-      // Force synchronous loading of peripheral JS.
-      script.async = false;
-    }
-    if (code !== '') {
-      script.appendChild(document.createTextNode(code));
-    }
-    parent.appendChild(script);
-  });
-  NexT.boot.refresh();
-  // Define Motion Sequence & Bootstrap Motion.
-  if (CONFIG.motion.enable) {
-    NexT.motion.integrator
-      .init()
-      .add(NexT.motion.middleWares.postList)
-      .bootstrap();
-  }
-  NexT.utils.updateSidebarPosition();
-});
-</script>
-
 
 
 
@@ -645,7 +591,6 @@ window.addEventListener('pjax:success', () => {
 
 
 
-    <div id="pjax">
 
   
 
@@ -704,6 +649,5 @@ window.addEventListener('pjax:success', () => {
   
 </script>
 
-    </div>
 </body>
 </html>
